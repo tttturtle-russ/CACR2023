@@ -1,0 +1,202 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "plugins/payload-modification/mosquitto_payload_modification.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"link_directories",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"plugins/payload-modification/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 44,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "CMAKE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "VERSION=\"2.0.18\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WITH_EC"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "WITH_SOCKS"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "WITH_THREADING"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WITH_TLS"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "WITH_TLS_PSK"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "WITH_UNIX_SOCKETS"
+				},
+				{
+					"define" : "mosquitto_payload_modification_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "/home/russ/mosquitto_cra"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/russ/mosquitto_cra/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "mosquitto_payload_modification::@a2195e0807d830dae76a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/russ/mosquitto_cra",
+				"role" : "libraryPath"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "mosquitto_payload_modification",
+	"nameOnDisk" : "mosquitto_payload_modification.so",
+	"paths" : 
+	{
+		"build" : "plugins/payload-modification",
+		"source" : "plugins/payload-modification"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "plugins/payload-modification/mosquitto_payload_modification.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

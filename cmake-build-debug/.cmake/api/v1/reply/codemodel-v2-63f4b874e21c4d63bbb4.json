@@ -1,0 +1,455 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						5,
+						8,
+						12
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a7a1702483fc4149c899.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "lib",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib-Debug-d16aecccbdddff45da27.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "lib/cpp",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.cpp-Debug-33bfc93b9c8488f9dfd9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "lib/cpp",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "client",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-client-Debug-b84c73d7f2d4cf6640ea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "client",
+					"targetIndexes" : 
+					[
+						14,
+						16,
+						18
+					]
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-b173ee6bf2f0b82d859b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "apps",
+					"childIndexes" : 
+					[
+						6,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-apps-Debug-76fddd1453400e648719.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "apps"
+				},
+				{
+					"build" : "apps/mosquitto_ctrl",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-apps.mosquitto_ctrl-Debug-81373c85d4940a70521a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "apps/mosquitto_ctrl",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "apps/mosquitto_passwd",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-apps.mosquitto_passwd-Debug-1ac52e621b422ddb1b2d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "apps/mosquitto_passwd",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "plugins",
+					"childIndexes" : 
+					[
+						9,
+						10,
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins-Debug-55275e3f2f02dcd473ff.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins"
+				},
+				{
+					"build" : "plugins/dynamic-security",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.dynamic-security-Debug-0489bfdf3c8f42b5ddf2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "plugins/dynamic-security",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "plugins/message-timestamp",
+					"jsonFile" : "directory-plugins.message-timestamp-Debug-2ebc523e82a466080867.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "plugins/message-timestamp",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "plugins/payload-modification",
+					"jsonFile" : "directory-plugins.payload-modification-Debug-952f5cd31d4e290b93ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "plugins/payload-modification",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "man",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-man-Debug-b67bc98f21e37106b712.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "man",
+					"targetIndexes" : 
+					[
+						1,
+						3,
+						4,
+						5,
+						7,
+						8,
+						12,
+						15,
+						17,
+						19,
+						21
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"name" : "mosquitto",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "libmosquitto::@306ed2d68c6501e8728f",
+					"jsonFile" : "target-libmosquitto-Debug-421c33ccce1ee3397766.json",
+					"name" : "libmosquitto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "libmosquitto.3::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-libmosquitto.3-Debug-657171ce89b0a557250a.json",
+					"name" : "libmosquitto.3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "mosquitto::@145eef247bfb46b6828c",
+					"jsonFile" : "target-mosquitto-Debug-060fb0afb6751b3b08a7.json",
+					"name" : "mosquitto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto-tls.7::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto-tls.7-Debug-9eded02152f0572bb514.json",
+					"name" : "mosquitto-tls.7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto.8::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto.8-Debug-36ab6e877d0070063e7b.json",
+					"name" : "mosquitto.8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto.conf.5::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto.conf.5-Debug-653a1555fb324d395c82.json",
+					"name" : "mosquitto.conf.5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "mosquitto_ctrl::@7efaecd2cc0d293cad4a",
+					"jsonFile" : "target-mosquitto_ctrl-Debug-112b9c6e47bcdb0bc1f2.json",
+					"name" : "mosquitto_ctrl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto_ctrl.1::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto_ctrl.1-Debug-4e63e6ec4e90564cdb03.json",
+					"name" : "mosquitto_ctrl.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto_ctrl_dynsec.1::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto_ctrl_dynsec.1-Debug-7616e5bb6b09bb64ea05.json",
+					"name" : "mosquitto_ctrl_dynsec.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "mosquitto_dynamic_security::@8dfa67311f3f121f2d7f",
+					"jsonFile" : "target-mosquitto_dynamic_security-Debug-a1860244787f09a87c28.json",
+					"name" : "mosquitto_dynamic_security",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "mosquitto_message_timestamp::@fe8b2bfa3e92766cec7b",
+					"jsonFile" : "target-mosquitto_message_timestamp-Debug-991fb1f8f6160df8661d.json",
+					"name" : "mosquitto_message_timestamp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "mosquitto_passwd::@1b55c27dcabacd848084",
+					"jsonFile" : "target-mosquitto_passwd-Debug-d4875510eb5c246a73cc.json",
+					"name" : "mosquitto_passwd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto_passwd.1::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto_passwd.1-Debug-4b7c4893acbf3a8b235e.json",
+					"name" : "mosquitto_passwd.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "mosquitto_payload_modification::@a2195e0807d830dae76a",
+					"jsonFile" : "target-mosquitto_payload_modification-Debug-7c2c52e575ad875aa8e3.json",
+					"name" : "mosquitto_payload_modification",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mosquitto_pub::@b0c487aac068df482bf0",
+					"jsonFile" : "target-mosquitto_pub-Debug-1e70d4db6784af08ec74.json",
+					"name" : "mosquitto_pub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto_pub.1::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto_pub.1-Debug-17cbe14c0957b7e6688d.json",
+					"name" : "mosquitto_pub.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mosquitto_rr::@b0c487aac068df482bf0",
+					"jsonFile" : "target-mosquitto_rr-Debug-1a34d4ffbeabb27e77b4.json",
+					"name" : "mosquitto_rr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto_rr.1::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto_rr.1-Debug-9e4117971048780bf66d.json",
+					"name" : "mosquitto_rr.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mosquitto_sub::@b0c487aac068df482bf0",
+					"jsonFile" : "target-mosquitto_sub-Debug-f42032243a7e0d7084c7.json",
+					"name" : "mosquitto_sub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mosquitto_sub.1::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mosquitto_sub.1-Debug-63fe2d495eafe5262264.json",
+					"name" : "mosquitto_sub.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mosquittopp::@2058d68873c3ad8b59af",
+					"jsonFile" : "target-mosquittopp-Debug-d9c4184970366f26775e.json",
+					"name" : "mosquittopp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "mqtt.7::@3ecd1443bf68424733ed",
+					"jsonFile" : "target-mqtt.7-Debug-82ebfec864e155a879bc.json",
+					"name" : "mqtt.7",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/russ/mosquitto_cra/cmake-build-debug",
+		"source" : "/home/russ/mosquitto_cra"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
