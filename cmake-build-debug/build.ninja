@@ -139,8 +139,6 @@ build lib/CMakeFiles/libmosquitto.dir/actions.c.o: C_COMPILER__libmosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/callbacks.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/callbacks.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -149,8 +147,6 @@ build lib/CMakeFiles/libmosquitto.dir/callbacks.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/connect.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/connect.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -159,8 +155,6 @@ build lib/CMakeFiles/libmosquitto.dir/connect.c.o: C_COMPILER__libmosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_auth.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_auth.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -169,8 +163,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_auth.c.o: C_COMPILER__libmosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_connack.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_connack.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -179,8 +171,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_connack.c.o: C_COMPILER__libmosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_disconnect.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_disconnect.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -189,8 +179,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_disconnect.c.o: C_COMPILER__libmosq
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_ping.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_ping.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -199,8 +187,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_ping.c.o: C_COMPILER__libmosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_pubackcomp.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_pubackcomp.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -209,8 +195,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_pubackcomp.c.o: C_COMPILER__libmosq
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_publish.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_publish.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -219,8 +203,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_publish.c.o: C_COMPILER__libmosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_pubrec.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_pubrec.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -229,8 +211,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_pubrec.c.o: C_COMPILER__libmosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_pubrel.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_pubrel.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -239,8 +219,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_pubrel.c.o: C_COMPILER__libmosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_suback.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_suback.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -249,8 +227,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_suback.c.o: C_COMPILER__libmosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/handle_unsuback.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_unsuback.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -259,8 +235,6 @@ build lib/CMakeFiles/libmosquitto.dir/handle_unsuback.c.o: C_COMPILER__libmosqui
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/helpers.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/helpers.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -269,8 +243,6 @@ build lib/CMakeFiles/libmosquitto.dir/helpers.c.o: C_COMPILER__libmosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/logging_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/logging_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -279,8 +251,6 @@ build lib/CMakeFiles/libmosquitto.dir/logging_mosq.c.o: C_COMPILER__libmosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/loop.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/loop.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -289,8 +259,6 @@ build lib/CMakeFiles/libmosquitto.dir/loop.c.o: C_COMPILER__libmosquitto_unscann
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/memory_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/memory_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -299,8 +267,6 @@ build lib/CMakeFiles/libmosquitto.dir/memory_mosq.c.o: C_COMPILER__libmosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/messages_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/messages_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -309,8 +275,6 @@ build lib/CMakeFiles/libmosquitto.dir/messages_mosq.c.o: C_COMPILER__libmosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/misc_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/misc_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -319,8 +283,6 @@ build lib/CMakeFiles/libmosquitto.dir/misc_mosq.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/mosquitto.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/mosquitto.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -329,8 +291,6 @@ build lib/CMakeFiles/libmosquitto.dir/mosquitto.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/net_mosq_ocsp.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/net_mosq_ocsp.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -339,8 +299,6 @@ build lib/CMakeFiles/libmosquitto.dir/net_mosq_ocsp.c.o: C_COMPILER__libmosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/net_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/net_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -349,8 +307,6 @@ build lib/CMakeFiles/libmosquitto.dir/net_mosq.c.o: C_COMPILER__libmosquitto_uns
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/options.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/options.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -359,8 +315,6 @@ build lib/CMakeFiles/libmosquitto.dir/options.c.o: C_COMPILER__libmosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/packet_datatypes.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/packet_datatypes.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -369,8 +323,6 @@ build lib/CMakeFiles/libmosquitto.dir/packet_datatypes.c.o: C_COMPILER__libmosqu
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/packet_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/packet_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -379,8 +331,6 @@ build lib/CMakeFiles/libmosquitto.dir/packet_mosq.c.o: C_COMPILER__libmosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/property_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/property_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -389,8 +339,6 @@ build lib/CMakeFiles/libmosquitto.dir/property_mosq.c.o: C_COMPILER__libmosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/read_handle.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/read_handle.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -399,8 +347,6 @@ build lib/CMakeFiles/libmosquitto.dir/read_handle.c.o: C_COMPILER__libmosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/send_connect.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_connect.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -409,8 +355,6 @@ build lib/CMakeFiles/libmosquitto.dir/send_connect.c.o: C_COMPILER__libmosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/send_disconnect.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_disconnect.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -419,8 +363,6 @@ build lib/CMakeFiles/libmosquitto.dir/send_disconnect.c.o: C_COMPILER__libmosqui
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/send_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -429,8 +371,6 @@ build lib/CMakeFiles/libmosquitto.dir/send_mosq.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/send_publish.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_publish.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -439,8 +379,6 @@ build lib/CMakeFiles/libmosquitto.dir/send_publish.c.o: C_COMPILER__libmosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/send_subscribe.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_subscribe.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -449,8 +387,6 @@ build lib/CMakeFiles/libmosquitto.dir/send_subscribe.c.o: C_COMPILER__libmosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/send_unsubscribe.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_unsubscribe.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -459,8 +395,6 @@ build lib/CMakeFiles/libmosquitto.dir/send_unsubscribe.c.o: C_COMPILER__libmosqu
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/socks_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/socks_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -469,8 +403,6 @@ build lib/CMakeFiles/libmosquitto.dir/socks_mosq.c.o: C_COMPILER__libmosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/srv_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/srv_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -479,8 +411,6 @@ build lib/CMakeFiles/libmosquitto.dir/srv_mosq.c.o: C_COMPILER__libmosquitto_uns
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/strings_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/strings_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -489,8 +419,6 @@ build lib/CMakeFiles/libmosquitto.dir/strings_mosq.c.o: C_COMPILER__libmosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/thread_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/thread_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -499,8 +427,6 @@ build lib/CMakeFiles/libmosquitto.dir/thread_mosq.c.o: C_COMPILER__libmosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/time_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/time_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -509,8 +435,6 @@ build lib/CMakeFiles/libmosquitto.dir/time_mosq.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/tls_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/tls_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -519,8 +443,6 @@ build lib/CMakeFiles/libmosquitto.dir/tls_mosq.c.o: C_COMPILER__libmosquitto_uns
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/utf8_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/utf8_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -529,8 +451,6 @@ build lib/CMakeFiles/libmosquitto.dir/utf8_mosq.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/util_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/util_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -539,8 +459,6 @@ build lib/CMakeFiles/libmosquitto.dir/util_mosq.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/util_topic.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/util_topic.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -549,8 +467,6 @@ build lib/CMakeFiles/libmosquitto.dir/util_topic.c.o: C_COMPILER__libmosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 build lib/CMakeFiles/libmosquitto.dir/will_mosq.c.o: C_COMPILER__libmosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/will_mosq.c || cmake_object_order_depends_target_libmosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dlibmosquitto_EXPORTS
@@ -559,8 +475,6 @@ build lib/CMakeFiles/libmosquitto.dir/will_mosq.c.o: C_COMPILER__libmosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = lib/CMakeFiles/libmosquitto.dir
   OBJECT_FILE_DIR = lib/CMakeFiles/libmosquitto.dir
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
-  TARGET_PDB = lib/libmosquitto.pdb
 
 
 # =============================================================================
@@ -580,10 +494,9 @@ build lib/libmosquitto.so.2.0.18: C_SHARED_LIBRARY_LINKER__libmosquitto_Debug li
   PRE_LINK = :
   SONAME = libmosquitto.so.1
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/CMakeFiles/libmosquitto.dir/
   TARGET_FILE = lib/libmosquitto.so.2.0.18
   TARGET_IMPLIB = lib/
-  TARGET_PDB = lib/libmosquitto.pdb
+  TARGET_PDB = mosquitto.so.dbg
 
 
 #############################################
@@ -691,8 +604,6 @@ build lib/cpp/CMakeFiles/mosquittopp.dir/mosquittopp.cpp.o: CXX_COMPILER__mosqui
   INCLUDES = -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/lib/cpp -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = lib/cpp/CMakeFiles/mosquittopp.dir
   OBJECT_FILE_DIR = lib/cpp/CMakeFiles/mosquittopp.dir
-  TARGET_COMPILE_PDB = lib/cpp/CMakeFiles/mosquittopp.dir/
-  TARGET_PDB = lib/cpp/libmosquittopp.pdb
 
 
 # =============================================================================
@@ -711,10 +622,9 @@ build lib/cpp/libmosquittopp.so.2.0.18: CXX_SHARED_LIBRARY_LINKER__mosquittopp_D
   PRE_LINK = :
   SONAME = libmosquittopp.so.1
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/cpp/CMakeFiles/mosquittopp.dir/
   TARGET_FILE = lib/cpp/libmosquittopp.so.2.0.18
   TARGET_IMPLIB = lib/cpp/
-  TARGET_PDB = lib/cpp/libmosquittopp.pdb
+  TARGET_PDB = mosquittopp.so.dbg
 
 
 #############################################
@@ -822,8 +732,6 @@ build client/CMakeFiles/mosquitto_pub.dir/pub_client.c.o: C_COMPILER__mosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_pub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_pub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_pub.dir/
-  TARGET_PDB = client/mosquitto_pub.pdb
 
 build client/CMakeFiles/mosquitto_pub.dir/pub_shared.c.o: C_COMPILER__mosquitto_pub_unscanned_Debug /home/russ/mosquitto_cra/client/pub_shared.c || cmake_object_order_depends_target_mosquitto_pub
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -832,8 +740,6 @@ build client/CMakeFiles/mosquitto_pub.dir/pub_shared.c.o: C_COMPILER__mosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_pub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_pub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_pub.dir/
-  TARGET_PDB = client/mosquitto_pub.pdb
 
 build client/CMakeFiles/mosquitto_pub.dir/client_shared.c.o: C_COMPILER__mosquitto_pub_unscanned_Debug /home/russ/mosquitto_cra/client/client_shared.c || cmake_object_order_depends_target_mosquitto_pub
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -842,8 +748,6 @@ build client/CMakeFiles/mosquitto_pub.dir/client_shared.c.o: C_COMPILER__mosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_pub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_pub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_pub.dir/
-  TARGET_PDB = client/mosquitto_pub.pdb
 
 build client/CMakeFiles/mosquitto_pub.dir/client_props.c.o: C_COMPILER__mosquitto_pub_unscanned_Debug /home/russ/mosquitto_cra/client/client_props.c || cmake_object_order_depends_target_mosquitto_pub
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -852,8 +756,6 @@ build client/CMakeFiles/mosquitto_pub.dir/client_props.c.o: C_COMPILER__mosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_pub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_pub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_pub.dir/
-  TARGET_PDB = client/mosquitto_pub.pdb
 
 
 # =============================================================================
@@ -871,9 +773,8 @@ build client/mosquitto_pub: C_EXECUTABLE_LINKER__mosquitto_pub_Debug client/CMak
   OBJECT_DIR = client/CMakeFiles/mosquitto_pub.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_pub.dir/
   TARGET_FILE = client/mosquitto_pub
-  TARGET_PDB = client/mosquitto_pub.pdb
+  TARGET_PDB = mosquitto_pub.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target mosquitto_sub
@@ -891,8 +792,6 @@ build client/CMakeFiles/mosquitto_sub.dir/sub_client.c.o: C_COMPILER__mosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_sub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_sub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_sub.dir/
-  TARGET_PDB = client/mosquitto_sub.pdb
 
 build client/CMakeFiles/mosquitto_sub.dir/sub_client_output.c.o: C_COMPILER__mosquitto_sub_unscanned_Debug /home/russ/mosquitto_cra/client/sub_client_output.c || cmake_object_order_depends_target_mosquitto_sub
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -901,8 +800,6 @@ build client/CMakeFiles/mosquitto_sub.dir/sub_client_output.c.o: C_COMPILER__mos
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_sub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_sub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_sub.dir/
-  TARGET_PDB = client/mosquitto_sub.pdb
 
 build client/CMakeFiles/mosquitto_sub.dir/client_shared.c.o: C_COMPILER__mosquitto_sub_unscanned_Debug /home/russ/mosquitto_cra/client/client_shared.c || cmake_object_order_depends_target_mosquitto_sub
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -911,8 +808,6 @@ build client/CMakeFiles/mosquitto_sub.dir/client_shared.c.o: C_COMPILER__mosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_sub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_sub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_sub.dir/
-  TARGET_PDB = client/mosquitto_sub.pdb
 
 build client/CMakeFiles/mosquitto_sub.dir/client_props.c.o: C_COMPILER__mosquitto_sub_unscanned_Debug /home/russ/mosquitto_cra/client/client_props.c || cmake_object_order_depends_target_mosquitto_sub
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -921,8 +816,6 @@ build client/CMakeFiles/mosquitto_sub.dir/client_props.c.o: C_COMPILER__mosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_sub.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_sub.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_sub.dir/
-  TARGET_PDB = client/mosquitto_sub.pdb
 
 
 # =============================================================================
@@ -940,9 +833,8 @@ build client/mosquitto_sub: C_EXECUTABLE_LINKER__mosquitto_sub_Debug client/CMak
   OBJECT_DIR = client/CMakeFiles/mosquitto_sub.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_sub.dir/
   TARGET_FILE = client/mosquitto_sub
-  TARGET_PDB = client/mosquitto_sub.pdb
+  TARGET_PDB = mosquitto_sub.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target mosquitto_rr
@@ -960,8 +852,6 @@ build client/CMakeFiles/mosquitto_rr.dir/rr_client.c.o: C_COMPILER__mosquitto_rr
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_rr.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_rr.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_rr.dir/
-  TARGET_PDB = client/mosquitto_rr.pdb
 
 build client/CMakeFiles/mosquitto_rr.dir/pub_shared.c.o: C_COMPILER__mosquitto_rr_unscanned_Debug /home/russ/mosquitto_cra/client/pub_shared.c || cmake_object_order_depends_target_mosquitto_rr
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -970,8 +860,6 @@ build client/CMakeFiles/mosquitto_rr.dir/pub_shared.c.o: C_COMPILER__mosquitto_r
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_rr.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_rr.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_rr.dir/
-  TARGET_PDB = client/mosquitto_rr.pdb
 
 build client/CMakeFiles/mosquitto_rr.dir/sub_client_output.c.o: C_COMPILER__mosquitto_rr_unscanned_Debug /home/russ/mosquitto_cra/client/sub_client_output.c || cmake_object_order_depends_target_mosquitto_rr
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -980,8 +868,6 @@ build client/CMakeFiles/mosquitto_rr.dir/sub_client_output.c.o: C_COMPILER__mosq
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_rr.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_rr.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_rr.dir/
-  TARGET_PDB = client/mosquitto_rr.pdb
 
 build client/CMakeFiles/mosquitto_rr.dir/client_shared.c.o: C_COMPILER__mosquitto_rr_unscanned_Debug /home/russ/mosquitto_cra/client/client_shared.c || cmake_object_order_depends_target_mosquitto_rr
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -990,8 +876,6 @@ build client/CMakeFiles/mosquitto_rr.dir/client_shared.c.o: C_COMPILER__mosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_rr.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_rr.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_rr.dir/
-  TARGET_PDB = client/mosquitto_rr.pdb
 
 build client/CMakeFiles/mosquitto_rr.dir/client_props.c.o: C_COMPILER__mosquitto_rr_unscanned_Debug /home/russ/mosquitto_cra/client/client_props.c || cmake_object_order_depends_target_mosquitto_rr
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1000,8 +884,6 @@ build client/CMakeFiles/mosquitto_rr.dir/client_props.c.o: C_COMPILER__mosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = client/CMakeFiles/mosquitto_rr.dir
   OBJECT_FILE_DIR = client/CMakeFiles/mosquitto_rr.dir
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_rr.dir/
-  TARGET_PDB = client/mosquitto_rr.pdb
 
 
 # =============================================================================
@@ -1019,9 +901,8 @@ build client/mosquitto_rr: C_EXECUTABLE_LINKER__mosquitto_rr_Debug client/CMakeF
   OBJECT_DIR = client/CMakeFiles/mosquitto_rr.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = client/CMakeFiles/mosquitto_rr.dir/
   TARGET_FILE = client/mosquitto_rr
-  TARGET_PDB = client/mosquitto_rr.pdb
+  TARGET_PDB = mosquitto_rr.dbg
 
 
 #############################################
@@ -1122,8 +1003,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/alias_mosq.c.o: C_COMPILER__mosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/bridge.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/bridge.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1132,8 +1011,6 @@ build src/CMakeFiles/mosquitto.dir/bridge.c.o: C_COMPILER__mosquitto_unscanned_D
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/bridge_topic.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/bridge_topic.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1142,8 +1019,6 @@ build src/CMakeFiles/mosquitto.dir/bridge_topic.c.o: C_COMPILER__mosquitto_unsca
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/conf.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/conf.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1152,8 +1027,6 @@ build src/CMakeFiles/mosquitto.dir/conf.c.o: C_COMPILER__mosquitto_unscanned_Deb
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/conf_includedir.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/conf_includedir.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1162,8 +1035,6 @@ build src/CMakeFiles/mosquitto.dir/conf_includedir.c.o: C_COMPILER__mosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/context.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/context.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1172,8 +1043,6 @@ build src/CMakeFiles/mosquitto.dir/context.c.o: C_COMPILER__mosquitto_unscanned_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/control.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/control.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1182,8 +1051,6 @@ build src/CMakeFiles/mosquitto.dir/control.c.o: C_COMPILER__mosquitto_unscanned_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/database.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/database.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1192,8 +1059,6 @@ build src/CMakeFiles/mosquitto.dir/database.c.o: C_COMPILER__mosquitto_unscanned
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/handle_auth.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/handle_auth.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1202,8 +1067,6 @@ build src/CMakeFiles/mosquitto.dir/handle_auth.c.o: C_COMPILER__mosquitto_unscan
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/handle_connack.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/handle_connack.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1212,8 +1075,6 @@ build src/CMakeFiles/mosquitto.dir/handle_connack.c.o: C_COMPILER__mosquitto_uns
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/handle_connect.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/handle_connect.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1222,8 +1083,6 @@ build src/CMakeFiles/mosquitto.dir/handle_connect.c.o: C_COMPILER__mosquitto_uns
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/handle_disconnect.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/handle_disconnect.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1232,8 +1091,6 @@ build src/CMakeFiles/mosquitto.dir/handle_disconnect.c.o: C_COMPILER__mosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/handle_ping.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_ping.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1242,8 +1099,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/handle_ping.c.o: C_COMPILER__mosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/handle_pubackcomp.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_pubackcomp.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1252,8 +1107,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/handle_pubackcomp.c.o: C_COMPILER__mos
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/handle_publish.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/handle_publish.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1262,8 +1115,6 @@ build src/CMakeFiles/mosquitto.dir/handle_publish.c.o: C_COMPILER__mosquitto_uns
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/handle_pubrec.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_pubrec.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1272,8 +1123,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/handle_pubrec.c.o: C_COMPILER__mosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/handle_pubrel.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_pubrel.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1282,8 +1131,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/handle_pubrel.c.o: C_COMPILER__mosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/handle_suback.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_suback.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1292,8 +1139,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/handle_suback.c.o: C_COMPILER__mosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/handle_subscribe.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/handle_subscribe.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1302,8 +1147,6 @@ build src/CMakeFiles/mosquitto.dir/handle_subscribe.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/handle_unsuback.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/handle_unsuback.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1312,8 +1155,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/handle_unsuback.c.o: C_COMPILER__mosqu
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/handle_unsubscribe.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/handle_unsubscribe.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1322,8 +1163,6 @@ build src/CMakeFiles/mosquitto.dir/handle_unsubscribe.c.o: C_COMPILER__mosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/keepalive.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/keepalive.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1332,8 +1171,6 @@ build src/CMakeFiles/mosquitto.dir/keepalive.c.o: C_COMPILER__mosquitto_unscanne
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/logging.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/logging.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1342,8 +1179,6 @@ build src/CMakeFiles/mosquitto.dir/logging.c.o: C_COMPILER__mosquitto_unscanned_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/loop.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/loop.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1352,8 +1187,6 @@ build src/CMakeFiles/mosquitto.dir/loop.c.o: C_COMPILER__mosquitto_unscanned_Deb
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/memory_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/memory_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1362,8 +1195,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/memory_mosq.c.o: C_COMPILER__mosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/memory_public.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/memory_public.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1372,8 +1203,6 @@ build src/CMakeFiles/mosquitto.dir/memory_public.c.o: C_COMPILER__mosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/mosquitto.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/mosquitto.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1382,8 +1211,6 @@ build src/CMakeFiles/mosquitto.dir/mosquitto.c.o: C_COMPILER__mosquitto_unscanne
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/misc_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/misc_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1392,8 +1219,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/misc_mosq.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/mux.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/mux.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1402,8 +1227,6 @@ build src/CMakeFiles/mosquitto.dir/mux.c.o: C_COMPILER__mosquitto_unscanned_Debu
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/mux_epoll.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/mux_epoll.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1412,8 +1235,6 @@ build src/CMakeFiles/mosquitto.dir/mux_epoll.c.o: C_COMPILER__mosquitto_unscanne
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/mux_poll.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/mux_poll.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1422,8 +1243,6 @@ build src/CMakeFiles/mosquitto.dir/mux_poll.c.o: C_COMPILER__mosquitto_unscanned
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/net.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/net.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1432,8 +1251,6 @@ build src/CMakeFiles/mosquitto.dir/net.c.o: C_COMPILER__mosquitto_unscanned_Debu
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/net_mosq_ocsp.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/net_mosq_ocsp.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1442,8 +1259,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/net_mosq_ocsp.c.o: C_COMPILER__mosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/net_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/net_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1452,8 +1267,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/net_mosq.c.o: C_COMPILER__mosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/packet_datatypes.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/packet_datatypes.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1462,8 +1275,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/packet_datatypes.c.o: C_COMPILER__mosq
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/packet_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/packet_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1472,8 +1283,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/packet_mosq.c.o: C_COMPILER__mosquitto
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/password_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/password_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1482,8 +1291,6 @@ build src/CMakeFiles/mosquitto.dir/password_mosq.c.o: C_COMPILER__mosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/persist_read_v234.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/persist_read_v234.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1492,8 +1299,6 @@ build src/CMakeFiles/mosquitto.dir/persist_read_v234.c.o: C_COMPILER__mosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/persist_read_v5.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/persist_read_v5.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1502,8 +1307,6 @@ build src/CMakeFiles/mosquitto.dir/persist_read_v5.c.o: C_COMPILER__mosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/persist_read.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/persist_read.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1512,8 +1315,6 @@ build src/CMakeFiles/mosquitto.dir/persist_read.c.o: C_COMPILER__mosquitto_unsca
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/persist_write_v5.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/persist_write_v5.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1522,8 +1323,6 @@ build src/CMakeFiles/mosquitto.dir/persist_write_v5.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/persist_write.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/persist_write.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1532,8 +1331,6 @@ build src/CMakeFiles/mosquitto.dir/persist_write.c.o: C_COMPILER__mosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/plugin.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/plugin.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1542,8 +1339,6 @@ build src/CMakeFiles/mosquitto.dir/plugin.c.o: C_COMPILER__mosquitto_unscanned_D
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/plugin_public.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/plugin_public.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1552,8 +1347,6 @@ build src/CMakeFiles/mosquitto.dir/plugin_public.c.o: C_COMPILER__mosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/property_broker.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/property_broker.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1562,8 +1355,6 @@ build src/CMakeFiles/mosquitto.dir/property_broker.c.o: C_COMPILER__mosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/property_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/property_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1572,8 +1363,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/property_mosq.c.o: C_COMPILER__mosquit
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/read_handle.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/read_handle.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1582,8 +1371,6 @@ build src/CMakeFiles/mosquitto.dir/read_handle.c.o: C_COMPILER__mosquitto_unscan
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/retain.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/retain.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1592,8 +1379,6 @@ build src/CMakeFiles/mosquitto.dir/retain.c.o: C_COMPILER__mosquitto_unscanned_D
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/security.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/security.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1602,8 +1387,6 @@ build src/CMakeFiles/mosquitto.dir/security.c.o: C_COMPILER__mosquitto_unscanned
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/security_default.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/security_default.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1612,8 +1395,6 @@ build src/CMakeFiles/mosquitto.dir/security_default.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/send_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1622,8 +1403,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/send_mosq.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/send_auth.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/send_auth.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1632,8 +1411,6 @@ build src/CMakeFiles/mosquitto.dir/send_auth.c.o: C_COMPILER__mosquitto_unscanne
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/send_connack.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/send_connack.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1642,8 +1419,6 @@ build src/CMakeFiles/mosquitto.dir/send_connack.c.o: C_COMPILER__mosquitto_unsca
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/send_connect.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_connect.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1652,8 +1427,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/send_connect.c.o: C_COMPILER__mosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/send_disconnect.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_disconnect.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1662,8 +1435,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/send_disconnect.c.o: C_COMPILER__mosqu
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/send_publish.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_publish.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1672,8 +1443,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/send_publish.c.o: C_COMPILER__mosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/send_suback.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/send_suback.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1682,8 +1451,6 @@ build src/CMakeFiles/mosquitto.dir/send_suback.c.o: C_COMPILER__mosquitto_unscan
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/signals.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/signals.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1692,8 +1459,6 @@ build src/CMakeFiles/mosquitto.dir/signals.c.o: C_COMPILER__mosquitto_unscanned_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/send_subscribe.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_subscribe.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1702,8 +1467,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/send_subscribe.c.o: C_COMPILER__mosqui
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/send_unsuback.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/send_unsuback.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1712,8 +1475,6 @@ build src/CMakeFiles/mosquitto.dir/send_unsuback.c.o: C_COMPILER__mosquitto_unsc
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/send_unsubscribe.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/send_unsubscribe.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1722,8 +1483,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/send_unsubscribe.c.o: C_COMPILER__mosq
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/session_expiry.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/session_expiry.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1732,8 +1491,6 @@ build src/CMakeFiles/mosquitto.dir/session_expiry.c.o: C_COMPILER__mosquitto_uns
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/strings_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/strings_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1742,8 +1499,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/strings_mosq.c.o: C_COMPILER__mosquitt
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/subs.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/subs.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1752,8 +1507,6 @@ build src/CMakeFiles/mosquitto.dir/subs.c.o: C_COMPILER__mosquitto_unscanned_Deb
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/sys_tree.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/sys_tree.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1762,8 +1515,6 @@ build src/CMakeFiles/mosquitto.dir/sys_tree.c.o: C_COMPILER__mosquitto_unscanned
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/time_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/time_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1772,8 +1523,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/time_mosq.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/tls_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/tls_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1782,8 +1531,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/tls_mosq.c.o: C_COMPILER__mosquitto_un
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/topic_tok.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/topic_tok.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1792,8 +1539,6 @@ build src/CMakeFiles/mosquitto.dir/topic_tok.c.o: C_COMPILER__mosquitto_unscanne
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/util_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/util_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1802,8 +1547,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/util_mosq.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/util_topic.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/util_topic.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1812,8 +1555,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/util_topic.c.o: C_COMPILER__mosquitto_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/utf8_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/utf8_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1822,8 +1563,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/utf8_mosq.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/websockets.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/websockets.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1832,8 +1571,6 @@ build src/CMakeFiles/mosquitto.dir/websockets.c.o: C_COMPILER__mosquitto_unscann
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/will_delay.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/src/will_delay.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1842,8 +1579,6 @@ build src/CMakeFiles/mosquitto.dir/will_delay.c.o: C_COMPILER__mosquitto_unscann
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 build src/CMakeFiles/mosquitto.dir/__/lib/will_mosq.c.o: C_COMPILER__mosquitto_unscanned_Debug /home/russ/mosquitto_cra/lib/will_mosq.c || cmake_object_order_depends_target_mosquitto
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_BRIDGE -DWITH_BROKER -DWITH_CONTROL -DWITH_EC -DWITH_EPOLL -DWITH_MEMORY_TRACKING -DWITH_PERSISTENCE -DWITH_SOCKS -DWITH_SYS_TREE -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -1852,8 +1587,6 @@ build src/CMakeFiles/mosquitto.dir/__/lib/will_mosq.c.o: C_COMPILER__mosquitto_u
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/deps
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   OBJECT_FILE_DIR = src/CMakeFiles/mosquitto.dir/__/lib
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
-  TARGET_PDB = src/mosquitto.pdb
 
 
 # =============================================================================
@@ -1870,9 +1603,8 @@ build src/mosquitto: C_EXECUTABLE_LINKER__mosquitto_Debug src/CMakeFiles/mosquit
   OBJECT_DIR = src/CMakeFiles/mosquitto.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = src/CMakeFiles/mosquitto.dir/
   TARGET_FILE = src/mosquitto
-  TARGET_PDB = src/mosquitto.pdb
+  TARGET_PDB = mosquitto.dbg
 
 
 #############################################
@@ -2056,8 +1788,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/mosquitto_ctrl.c.o: C_CO
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/client.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_ctrl/client.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2066,8 +1796,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/client.c.o: C_COMPILER__
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_ctrl/dynsec.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2076,8 +1804,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec.c.o: C_COMPILER__
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec_client.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_ctrl/dynsec_client.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2086,8 +1812,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec_client.c.o: C_COM
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec_group.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_ctrl/dynsec_group.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2096,8 +1820,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec_group.c.o: C_COMP
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec_role.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_ctrl/dynsec_role.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2106,8 +1828,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/dynsec_role.c.o: C_COMPI
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/mosquitto_passwd/get_password.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_passwd/get_password.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2116,8 +1836,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/mosquitto_passwd/get_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/mosquitto_passwd
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/lib/memory_mosq.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/lib/memory_mosq.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2126,8 +1844,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/lib/memory_mosq.c.
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/lib
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/lib/misc_mosq.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/lib/misc_mosq.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2136,8 +1852,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/lib/misc_mosq.c.o:
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/lib
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/src/memory_public.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/src/memory_public.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2146,8 +1860,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/src/memory_public.
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/src
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/options.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_ctrl/options.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2156,8 +1868,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/options.c.o: C_COMPILER_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/src/password_mosq.c.o: C_COMPILER__mosquitto_ctrl_unscanned_Debug /home/russ/mosquitto_cra/src/password_mosq.c || cmake_object_order_depends_target_mosquitto_ctrl
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2166,8 +1876,6 @@ build apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/src/password_mosq.
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src -I/home/russ/mosquitto_cra/apps/mosquitto_passwd
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   OBJECT_FILE_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/__/__/src
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
 
 
 # =============================================================================
@@ -2184,9 +1892,8 @@ build apps/mosquitto_ctrl/mosquitto_ctrl: C_EXECUTABLE_LINKER__mosquitto_ctrl_De
   OBJECT_DIR = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = apps/mosquitto_ctrl/CMakeFiles/mosquitto_ctrl.dir/
   TARGET_FILE = apps/mosquitto_ctrl/mosquitto_ctrl
-  TARGET_PDB = apps/mosquitto_ctrl/mosquitto_ctrl.pdb
+  TARGET_PDB = mosquitto_ctrl.dbg
 
 
 #############################################
@@ -2287,8 +1994,6 @@ build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/mosquitto_passwd.c.o
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
   OBJECT_FILE_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/
-  TARGET_PDB = apps/mosquitto_passwd/mosquitto_passwd.pdb
 
 build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/get_password.c.o: C_COMPILER__mosquitto_passwd_unscanned_Debug /home/russ/mosquitto_cra/apps/mosquitto_passwd/get_password.c || cmake_object_order_depends_target_mosquitto_passwd
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2297,8 +2002,6 @@ build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/get_password.c.o: C_
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
   OBJECT_FILE_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
-  TARGET_COMPILE_PDB = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/
-  TARGET_PDB = apps/mosquitto_passwd/mosquitto_passwd.pdb
 
 build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/lib/memory_mosq.c.o: C_COMPILER__mosquitto_passwd_unscanned_Debug /home/russ/mosquitto_cra/lib/memory_mosq.c || cmake_object_order_depends_target_mosquitto_passwd
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2307,8 +2010,6 @@ build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/lib/memory_mos
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
   OBJECT_FILE_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/lib
-  TARGET_COMPILE_PDB = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/
-  TARGET_PDB = apps/mosquitto_passwd/mosquitto_passwd.pdb
 
 build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/src/memory_public.c.o: C_COMPILER__mosquitto_passwd_unscanned_Debug /home/russ/mosquitto_cra/src/memory_public.c || cmake_object_order_depends_target_mosquitto_passwd
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2317,8 +2018,6 @@ build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/src/memory_pub
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
   OBJECT_FILE_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/src
-  TARGET_COMPILE_PDB = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/
-  TARGET_PDB = apps/mosquitto_passwd/mosquitto_passwd.pdb
 
 build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/lib/misc_mosq.c.o: C_COMPILER__mosquitto_passwd_unscanned_Debug /home/russ/mosquitto_cra/lib/misc_mosq.c || cmake_object_order_depends_target_mosquitto_passwd
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2327,8 +2026,6 @@ build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/lib/misc_mosq.
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
   OBJECT_FILE_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/lib
-  TARGET_COMPILE_PDB = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/
-  TARGET_PDB = apps/mosquitto_passwd/mosquitto_passwd.pdb
 
 build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/src/password_mosq.c.o: C_COMPILER__mosquitto_passwd_unscanned_Debug /home/russ/mosquitto_cra/src/password_mosq.c || cmake_object_order_depends_target_mosquitto_passwd
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS
@@ -2337,8 +2034,6 @@ build apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/src/password_m
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/lib -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
   OBJECT_FILE_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/__/__/src
-  TARGET_COMPILE_PDB = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/
-  TARGET_PDB = apps/mosquitto_passwd/mosquitto_passwd.pdb
 
 
 # =============================================================================
@@ -2355,9 +2050,8 @@ build apps/mosquitto_passwd/mosquitto_passwd: C_EXECUTABLE_LINKER__mosquitto_pas
   OBJECT_DIR = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = apps/mosquitto_passwd/CMakeFiles/mosquitto_passwd.dir/
   TARGET_FILE = apps/mosquitto_passwd/mosquitto_passwd
-  TARGET_PDB = apps/mosquitto_passwd/mosquitto_passwd.pdb
+  TARGET_PDB = mosquitto_passwd.dbg
 
 
 #############################################
@@ -2541,8 +2235,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/acl.c.o
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/auth.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/auth.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2551,8 +2243,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/auth.c.
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/clients.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/clients.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2561,8 +2251,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/clients
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/clientlist.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/clientlist.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2571,8 +2259,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/clientl
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/groups.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/groups.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2581,8 +2267,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/groups.
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/grouplist.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/grouplist.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2591,8 +2275,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/groupli
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/json_help.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/json_help.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2601,8 +2283,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/json_he
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/plugin.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/plugin.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2611,8 +2291,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/plugin.
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/roles.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/roles.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2621,8 +2299,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/roles.c
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/rolelist.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/rolelist.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2631,8 +2307,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/rolelis
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/sub_matches_sub.c.o: C_COMPILER__mosquitto_dynamic_security_unscanned_Debug /home/russ/mosquitto_cra/plugins/dynamic-security/sub_matches_sub.c || cmake_object_order_depends_target_mosquitto_dynamic_security
   DEFINES = -DCMAKE -DVERSION=\"2.0.18\" -DWITH_CJSON -DWITH_EC -DWITH_SOCKS -DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK -DWITH_UNIX_SOCKETS -Dmosquitto_dynamic_security_EXPORTS
@@ -2641,8 +2315,6 @@ build plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/sub_mat
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include -I/home/russ/mosquitto_cra/deps -I/home/russ/mosquitto_cra/src
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   OBJECT_FILE_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
 
 
 # =============================================================================
@@ -2659,9 +2331,8 @@ build plugins/dynamic-security/mosquitto_dynamic_security.so: C_MODULE_LIBRARY_L
   OBJECT_DIR = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = plugins/dynamic-security/CMakeFiles/mosquitto_dynamic_security.dir/
   TARGET_FILE = plugins/dynamic-security/mosquitto_dynamic_security.so
-  TARGET_PDB = plugins/dynamic-security/mosquitto_dynamic_security.pdb
+  TARGET_PDB = mosquitto_dynamic_security.so.dbg
 
 
 #############################################
@@ -2762,8 +2433,6 @@ build plugins/message-timestamp/CMakeFiles/mosquitto_message_timestamp.dir/mosqu
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = plugins/message-timestamp/CMakeFiles/mosquitto_message_timestamp.dir
   OBJECT_FILE_DIR = plugins/message-timestamp/CMakeFiles/mosquitto_message_timestamp.dir
-  TARGET_COMPILE_PDB = plugins/message-timestamp/CMakeFiles/mosquitto_message_timestamp.dir/
-  TARGET_PDB = plugins/message-timestamp/mosquitto_message_timestamp.pdb
 
 
 # =============================================================================
@@ -2778,9 +2447,8 @@ build plugins/message-timestamp/mosquitto_message_timestamp.so: C_MODULE_LIBRARY
   OBJECT_DIR = plugins/message-timestamp/CMakeFiles/mosquitto_message_timestamp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = plugins/message-timestamp/CMakeFiles/mosquitto_message_timestamp.dir/
   TARGET_FILE = plugins/message-timestamp/mosquitto_message_timestamp.so
-  TARGET_PDB = plugins/message-timestamp/mosquitto_message_timestamp.pdb
+  TARGET_PDB = mosquitto_message_timestamp.so.dbg
 
 
 #############################################
@@ -2881,8 +2549,6 @@ build plugins/payload-modification/CMakeFiles/mosquitto_payload_modification.dir
   INCLUDES = -I/home/russ/mosquitto_cra -I/home/russ/mosquitto_cra/include
   OBJECT_DIR = plugins/payload-modification/CMakeFiles/mosquitto_payload_modification.dir
   OBJECT_FILE_DIR = plugins/payload-modification/CMakeFiles/mosquitto_payload_modification.dir
-  TARGET_COMPILE_PDB = plugins/payload-modification/CMakeFiles/mosquitto_payload_modification.dir/
-  TARGET_PDB = plugins/payload-modification/mosquitto_payload_modification.pdb
 
 
 # =============================================================================
@@ -2898,9 +2564,8 @@ build plugins/payload-modification/mosquitto_payload_modification.so: C_MODULE_L
   OBJECT_DIR = plugins/payload-modification/CMakeFiles/mosquitto_payload_modification.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = plugins/payload-modification/CMakeFiles/mosquitto_payload_modification.dir/
   TARGET_FILE = plugins/payload-modification/mosquitto_payload_modification.so
-  TARGET_PDB = plugins/payload-modification/mosquitto_payload_modification.pdb
+  TARGET_PDB = mosquitto_payload_modification.so.dbg
 
 
 #############################################
@@ -3457,14 +3122,14 @@ build src/all: phony src/mosquitto
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/russ/mosquitto_cra/CMakeLists.txt /home/russ/mosquitto_cra/apps/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_ctrl/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_passwd/CMakeLists.txt /home/russ/mosquitto_cra/client/CMakeLists.txt /home/russ/mosquitto_cra/cmake/FindcJSON.cmake /home/russ/mosquitto_cra/lib/CMakeLists.txt /home/russ/mosquitto_cra/lib/cpp/CMakeLists.txt /home/russ/mosquitto_cra/libmosquitto.pc.in /home/russ/mosquitto_cra/libmosquittopp.pc.in /home/russ/mosquitto_cra/man/CMakeLists.txt /home/russ/mosquitto_cra/plugins/CMakeLists.txt /home/russ/mosquitto_cra/plugins/dynamic-security/CMakeLists.txt /home/russ/mosquitto_cra/plugins/message-timestamp/CMakeLists.txt /home/russ/mosquitto_cra/plugins/payload-modification/CMakeLists.txt /home/russ/mosquitto_cra/src/CMakeLists.txt /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindOpenSSL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/russ/mosquitto_cra/CMakeLists.txt /home/russ/mosquitto_cra/apps/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_ctrl/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_passwd/CMakeLists.txt /home/russ/mosquitto_cra/client/CMakeLists.txt /home/russ/mosquitto_cra/cmake/FindcJSON.cmake /home/russ/mosquitto_cra/lib/CMakeLists.txt /home/russ/mosquitto_cra/lib/cpp/CMakeLists.txt /home/russ/mosquitto_cra/libmosquitto.pc.in /home/russ/mosquitto_cra/libmosquittopp.pc.in /home/russ/mosquitto_cra/man/CMakeLists.txt /home/russ/mosquitto_cra/plugins/CMakeLists.txt /home/russ/mosquitto_cra/plugins/dynamic-security/CMakeLists.txt /home/russ/mosquitto_cra/plugins/message-timestamp/CMakeLists.txt /home/russ/mosquitto_cra/plugins/payload-modification/CMakeLists.txt /home/russ/mosquitto_cra/src/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenSSL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/russ/mosquitto_cra/CMakeLists.txt /home/russ/mosquitto_cra/apps/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_ctrl/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_passwd/CMakeLists.txt /home/russ/mosquitto_cra/client/CMakeLists.txt /home/russ/mosquitto_cra/cmake/FindcJSON.cmake /home/russ/mosquitto_cra/lib/CMakeLists.txt /home/russ/mosquitto_cra/lib/cpp/CMakeLists.txt /home/russ/mosquitto_cra/libmosquitto.pc.in /home/russ/mosquitto_cra/libmosquittopp.pc.in /home/russ/mosquitto_cra/man/CMakeLists.txt /home/russ/mosquitto_cra/plugins/CMakeLists.txt /home/russ/mosquitto_cra/plugins/dynamic-security/CMakeLists.txt /home/russ/mosquitto_cra/plugins/message-timestamp/CMakeLists.txt /home/russ/mosquitto_cra/plugins/payload-modification/CMakeLists.txt /home/russ/mosquitto_cra/src/CMakeLists.txt /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindOpenSSL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake: phony
+build /home/russ/mosquitto_cra/CMakeLists.txt /home/russ/mosquitto_cra/apps/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_ctrl/CMakeLists.txt /home/russ/mosquitto_cra/apps/mosquitto_passwd/CMakeLists.txt /home/russ/mosquitto_cra/client/CMakeLists.txt /home/russ/mosquitto_cra/cmake/FindcJSON.cmake /home/russ/mosquitto_cra/lib/CMakeLists.txt /home/russ/mosquitto_cra/lib/cpp/CMakeLists.txt /home/russ/mosquitto_cra/libmosquitto.pc.in /home/russ/mosquitto_cra/libmosquittopp.pc.in /home/russ/mosquitto_cra/man/CMakeLists.txt /home/russ/mosquitto_cra/plugins/CMakeLists.txt /home/russ/mosquitto_cra/plugins/dynamic-security/CMakeLists.txt /home/russ/mosquitto_cra/plugins/message-timestamp/CMakeLists.txt /home/russ/mosquitto_cra/plugins/payload-modification/CMakeLists.txt /home/russ/mosquitto_cra/src/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenSSL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake: phony
 
 
 #############################################

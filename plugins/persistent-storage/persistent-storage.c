@@ -20,6 +20,5 @@ static int persistent_storage_callback(int event, void *event_data, void *userda
     bson_append_int32(doc, "payloadlen", -1, ed->payloadlen);
     bson_append_int32(doc, "qos", -1, ed->qos);
     bson_append_int32(doc, "retain", -1, ed->retain);
-
-    mongoc_collection_insert_one()
+    mongoc_collection_insert_one();
 };

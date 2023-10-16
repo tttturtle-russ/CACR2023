@@ -1,6 +1,11 @@
-include_directories(${mosquitto_SOURCE_DIR} ${mosquitto_SOURCE_DIR}/include
-        ${OPENSSL_INCLUDE_DIR} ${STDBOOL_H_PATH} ${STDINT_H_PATH})
+cmake_minimum_required(VERSION 3.10)
+set(PLUGIN_NAME mosquitto_message_encrypt)
+project(${PLUGIN_NAME} C)
 
-set(PLUGIN_NAME encrypt_message)
+include_directories(/usr/local/include)
+include_directories(../../include)
 
-add_library(${PLUGIN_NAME} MODULE ${PLUGIN_NAME}.c)
+add_executable(${PLUGIN_NAME} test.c
+        mosquitto_message_encrypt.c
+        database.c)
+target_link_libraries(${PLUGIN_NAME} gmssl)
