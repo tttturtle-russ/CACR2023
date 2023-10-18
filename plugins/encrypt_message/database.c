@@ -6,7 +6,7 @@
 #include <bson/bson.h>
 #include <gmssl/sm2.h>
 const char* uri_str = "mongodb://localhost:27017/?ssl=false";
-const char* database = "mqtt";
+char *database = "mqtt";
 
 int main(){
     SM2_KEY sm2Key;

@@ -7,10 +7,6 @@
 				{
 					"build" : ".",
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.10"
-					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
@@ -27,7 +23,7 @@
 					[
 						0
 					],
-					"name" : "mosquitto_message_encrypt",
+					"name" : "Project",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +34,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "mosquitto_message_encrypt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mosquitto_message_encrypt-Debug-29ad46381d23c050d900.json",
-					"name" : "mosquitto_message_encrypt",
+					"id" : "mosquitto_auth_by_ip::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mosquitto_auth_by_ip-Debug-89ee09b09bc03166c286.json",
+					"name" : "mosquitto_auth_by_ip",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +45,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/russ/mosquitto_cra/plugins/encrypt_message/cmake-build-debug",
-		"source" : "/home/russ/mosquitto_cra/plugins/encrypt_message"
+		"build" : "/home/russ/mosquitto_cra/plugins/auth-by-ip/cmake-build-debug",
+		"source" : "/home/russ/mosquitto_cra/plugins/auth-by-ip"
 	},
 	"version" : 
 	{

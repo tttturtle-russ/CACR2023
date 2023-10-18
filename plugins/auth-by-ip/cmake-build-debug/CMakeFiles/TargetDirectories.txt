@@ -1,0 +1,3 @@
+/home/russ/mosquitto_cra/plugins/auth-by-ip/cmake-build-debug/CMakeFiles/mosquitto_auth_by_ip.dir
+/home/russ/mosquitto_cra/plugins/auth-by-ip/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/russ/mosquitto_cra/plugins/auth-by-ip/cmake-build-debug/CMakeFiles/rebuild_cache.dir
