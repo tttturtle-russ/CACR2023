@@ -52,14 +52,7 @@ build cmake_object_order_depends_target_mosquitto_message_encrypt: phony || CMak
 build CMakeFiles/mosquitto_message_encrypt.dir/mosquitto_message_encrypt.c.o: C_COMPILER__mosquitto_message_encrypt_unscanned_Debug /home/russ/mosquitto_cra/plugins/encrypt_message/mosquitto_message_encrypt.c || cmake_object_order_depends_target_mosquitto_message_encrypt
   DEP_FILE = CMakeFiles/mosquitto_message_encrypt.dir/mosquitto_message_encrypt.c.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/russ/mosquitto_cra/plugins/encrypt_message/../../include
-  OBJECT_DIR = CMakeFiles/mosquitto_message_encrypt.dir
-  OBJECT_FILE_DIR = CMakeFiles/mosquitto_message_encrypt.dir
-
-build CMakeFiles/mosquitto_message_encrypt.dir/database.c.o: C_COMPILER__mosquitto_message_encrypt_unscanned_Debug /home/russ/mosquitto_cra/plugins/encrypt_message/database.c || cmake_object_order_depends_target_mosquitto_message_encrypt
-  DEP_FILE = CMakeFiles/mosquitto_message_encrypt.dir/database.c.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/russ/mosquitto_cra/plugins/encrypt_message/../../include
+  INCLUDES = -I/home/russ/mosquitto_cra/plugins/encrypt_message/../../include -I/home/russ/mosquitto_cra/plugins/encrypt_message/../..
   OBJECT_DIR = CMakeFiles/mosquitto_message_encrypt.dir
   OBJECT_FILE_DIR = CMakeFiles/mosquitto_message_encrypt.dir
 
@@ -71,7 +64,7 @@ build CMakeFiles/mosquitto_message_encrypt.dir/database.c.o: C_COMPILER__mosquit
 #############################################
 # Link the executable mosquitto_message_encrypt
 
-build mosquitto_message_encrypt: C_EXECUTABLE_LINKER__mosquitto_message_encrypt_Debug CMakeFiles/mosquitto_message_encrypt.dir/mosquitto_message_encrypt.c.o CMakeFiles/mosquitto_message_encrypt.dir/database.c.o
+build mosquitto_message_encrypt: C_EXECUTABLE_LINKER__mosquitto_message_encrypt_Debug CMakeFiles/mosquitto_message_encrypt.dir/mosquitto_message_encrypt.c.o
   FLAGS = -g
   LINK_LIBRARIES = -lgmssl
   OBJECT_DIR = CMakeFiles/mosquitto_message_encrypt.dir

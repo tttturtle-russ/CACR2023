@@ -1,4 +1,4 @@
-/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/russ/mosquitto_cra/plugins/encrypt_message -B /home/russ/mosquitto_cra/plugins/encrypt_message/cmake-build-debug
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/russ/mosquitto_cra/plugins/encrypt_message -B /home/russ/mosquitto_cra/plugins/encrypt_message/cmake-build-debug
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/russ/mosquitto_cra/plugins/encrypt_message/cmake-build-debug

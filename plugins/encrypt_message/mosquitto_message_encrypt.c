@@ -97,7 +97,7 @@ int decrypt_sig_and_msg(uint8_t* cipher,
     return ERROR_DECRYPT;
 }
 
-int read_pem(SM2_KEY *sm2_key,const char* pass) {
+int read_pem(const char uuid[16],SM2_KEY *sm2_key,uint8_t sm4_key_arr[SM4_KEY_SIZE],uint8_t sm4_iv_arr[SM4_BLOCK_SIZE],uint8_t sm3_hmac_key_arr[SM3_HMAC_KEY_SIZE]) {
     mongoc_client_t *client = mongoc_client_pool_try_pop(pool);
     if (!client){
         //fprintf(stderr,"Failed to pop client pool\n");
@@ -106,20 +106,16 @@ int read_pem(SM2_KEY *sm2_key,const char* pass) {
     }
     mongoc_collection_t *collection = mongoc_client_get_collection(client,database,"pems");
     bson_t *query ;
-    query = BCON_NEW("uuid", BCON_INT32(0000));
+    query = BCON_NEW("uuid", BCON_UTF8(uuid));
     bson_error_t *error;
     mongoc_cursor_t *cursor = mongoc_collection_find_with_opts(collection,query,NULL,NULL);
     bson_t *doc;
     bson_iter_t iter;
-    while (mongoc_cursor_next(cursor,&doc)){
-        if (bson_iter_init_find(&iter,doc,"private")){
-            bson_value_t* v = bson_iter_value(&iter);
-            FILE * test = fmemopen(v->value.v_utf8.str,v->value.v_utf8.len,"r");
-            sm2_private_key_info_decrypt_from_pem(sm2_key,pass,test);
-            fclose(test);
-        }
+    while (mongoc_cursor_next(cursor,&doc)) {
+        const char * str = bson_as_json(doc,NULL);
+        printf("%s\n",str);
+        bson_free(str);
     }
-
     if (mongoc_cursor_error(cursor,error)){
         fprintf(stderr,"Cursor Failure:%s\n",error->message);
         return EXIT_FAILURE;
@@ -132,13 +128,15 @@ int read_pem(SM2_KEY *sm2_key,const char* pass) {
 }
 
 int decrypt_message(struct mosquitto_evt_message *ed) {
-    const char* pass = "123456";
     SM2_KEY *sm2_key = calloc(1,sizeof(SM2_KEY));
-    read_pem(sm2_key,pass);
     SM4_KEY sm4_key;
     uint8_t sm3_hmac_key_arr[SM3_HMAC_KEY_SIZE];
     uint8_t sm4_key_arr[SM4_KEY_SIZE];
     uint8_t sm4_iv_arr[SM4_BLOCK_SIZE];
+    char uuid[16];
+    memcpy(uuid,ed->payload,16);
+    // 从数据库中读取pem私钥
+    read_pem(uuid,sm2_key,sm4_key_arr,sm4_iv_arr,sm3_hmac_key_arr);
     for (int i = 0; i < 16; ++i) {
         sm4_iv_arr[i] = i;
         sm4_key_arr[i] = i;
