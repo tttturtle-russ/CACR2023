@@ -1,3 +1,0 @@
-/home/russ/mosquitto_cra/plugins/encrypt_message/cmake-build-debug/CMakeFiles/mosquitto_message_encrypt.dir
-/home/russ/mosquitto_cra/plugins/encrypt_message/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/russ/mosquitto_cra/plugins/encrypt_message/cmake-build-debug/CMakeFiles/rebuild_cache.dir
