@@ -10,6 +10,9 @@
 				{
 					"includeDirectories" : 
 					[
+						"/usr/include/c++/13.2.1",
+						"/usr/include/c++/13.2.1/x86_64-pc-linux-gnu",
+						"/usr/include/c++/13.2.1/backward",
 						"/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include",
 						"/usr/local/include",
 						"/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed",
@@ -24,21 +27,36 @@
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : 
 					[
-						"gcc",
+						"stdc++",
+						"m",
 						"gcc_s",
-						"c",
 						"gcc",
-						"gcc_s"
+						"c",
+						"gcc_s",
+						"gcc"
 					]
 				},
-				"path" : "/usr/bin/cc",
+				"path" : "/usr/bin/c++",
 				"version" : "13.2.1"
 			},
-			"language" : "C",
+			"language" : "CXX",
 			"sourceFileExtensions" : 
 			[
-				"c",
-				"m"
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"m",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
 			]
 		}
 	],
