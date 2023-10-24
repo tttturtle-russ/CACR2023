@@ -25,7 +25,7 @@ mongocxx::pool *p = nullptr;
 char timebuf[32];
 
 
-#define UUID_LEN 16
+#define UUID_LEN 32
 #define SM3_HMAC_KEY_SIZE 16
 #define info(fmt,...) {mosquitto_log_printf(MOSQ_LOG_INFO,fmt,__VA_ARGS__);fprintf(log_,fmt,__VA_ARGS__);}
 #define warn(fmt,...) {mosquitto_log_printf(MOSQ_LOG_WARNING,fmt,__VA_ARGS__);fprintf(__log,fmt,__VA_ARGS__);}
@@ -63,31 +63,29 @@ ERROR decrypt_sm4_key_and_iv(uint8_t * payload,
         return ERROR_DATA;
     }
     uint8_t buf[SM4_KEY_SIZE + SM4_BLOCK_SIZE];
+    printf("payload:%02x\n",payload[0]);
     bool success = false;
     //sm2_key_print(stdout,0,0,"",sm2_key);
     for (int i = 138; i <= 143; ++i) {
-        //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:at i = %d,try to decrypt:",get_timestamp(),i);
-        info("%s:at i = %d,try to decrypt:",get_timestamp(),i)
         if(sm2_decrypt(sm2_key, payload, i, buf, offset) != 1){
-            info("%s:at i = %d,decrypt failed",get_timestamp(),i)
-            //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:at i = %d,decrypt failed",get_timestamp(),i);
             continue;
         }
-        info("%s:at i = %d,decrypt success",get_timestamp(),i)
-        //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:at i = %d,decrypt success",get_timestamp(),i);
         success = true;
-        *offset = i;
+        *offset = i ;
         break;
     }
     if(!success) {
         error("%s:failed to decrypt sm4 key and iv",get_timestamp())
-        //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:failed to decrypt sm4 key and iv",get_timestamp());
         return ERROR_DECRYPT;
     }
-    info("%s:success decrypt sm4 key and iv",get_timestamp());
+    info("%s:success decrypt sm4 key and iv",get_timestamp())
     //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:success decrypt sm4 key and iv",get_timestamp());
     memcpy(sm4_key_arr,buf,SM4_KEY_SIZE);
     memcpy(sm4_iv_arr,buf+SM4_KEY_SIZE,SM4_BLOCK_SIZE);
+    for (int i = 0; i < 32; ++i) {
+        printf("%02x",sm4_key_arr[i]);
+    }
+    putchar('\n');
     return ERROR_SUCCESS;
 }
 
@@ -106,13 +104,10 @@ ERROR decrypt_sig_and_msg(uint8_t* cipher,
 
 int read_pem(const std::string& uuid,SM2_KEY *sm2_key,uint8_t sm4_key_arr[SM4_KEY_SIZE],uint8_t sm4_iv_arr[SM4_BLOCK_SIZE],uint8_t sm3_hmac_key_arr[SM3_HMAC_KEY_SIZE]) {
     auto client = p->try_acquire();
-    std::cout << "acquire client" << std::endl;
     if (!client) {
         error("%s:Failed to pop client pool\n",get_timestamp());
         return ERROR_INTERNAL;
     }
-    std::cout << "acquire client success" << std::endl;
-    std::cout << "get collection" << std::endl;
     auto pems = (*client)->database(database).collection("pems");
     if (!pems){
         error("%s:Failed to get collection\n",get_timestamp());
@@ -127,40 +122,46 @@ int read_pem(const std::string& uuid,SM2_KEY *sm2_key,uint8_t sm4_key_arr[SM4_KE
     auto doc = cursor->view();
     if (doc["private_key"] && (doc["private_key"].type() == bsoncxx::type::k_string)){
         int pass = doc["pass"].get_int32().value;
+        std::cout << "pass" << pass << std::endl;
         std::string private_key = doc["private_key"].get_string().value.to_string();
         FILE* fp = fmemopen((void *) private_key.c_str(), private_key.length(), "r");
         sm2_private_key_info_decrypt_from_pem(sm2_key,std::to_string(pass).c_str(),fp);
+        sm2_key_print(stdout,0,0,"",sm2_key);
         fclose(fp);
     }else{
         error("%s:Failed to find private_key\n",get_timestamp());
         return ERROR_INTERNAL;
     }
 
-    if (doc["sm4_key"] && (doc["sm4_key"].type() == bsoncxx::type::k_string)) {
-        auto sm4_key = doc["sm4_key"].get_string().value.to_string();
-        for (int i = 0; i < SM4_KEY_SIZE; ++i) {
-            sscanf(sm4_key.c_str() + i * 2, "%02x", &sm4_key_arr[i]);
-        }
-    } else {
-        error("%s:Failed to find sm4_key\n",get_timestamp());
-        return ERROR_INTERNAL;
-    }
-
-    if(doc["sm4_iv"] && (doc["sm4_iv"].type() == bsoncxx::type::k_string)){
-        auto sm4_iv = doc["sm4_iv"].get_string().value.to_string();
-        for (int i = 0; i < SM4_BLOCK_SIZE; ++i) {
-            sscanf(sm4_iv.c_str() + i * 2, "%02x", &sm4_iv_arr[i]);
-        }
-    }else{
-        error("%s:Failed to find sm4_iv\n",get_timestamp());
-        return ERROR_INTERNAL;
-    }
+//    if (doc["sm4_key"] && (doc["sm4_key"].type() == bsoncxx::type::k_string)) {
+//        auto sm4_key = doc["sm4_key"].get_string().value.to_string();
+//        for (int i = 0; i < SM4_KEY_SIZE; ++i) {
+//            sscanf(sm4_key.c_str() + i * 2, "%02x", &sm4_key_arr[i]);
+//        }
+//    } else {
+//        error("%s:Failed to find sm4_key\n",get_timestamp());
+//        return ERROR_INTERNAL;
+//    }
+//
+//    if(doc["sm4_iv"] && (doc["sm4_iv"].type() == bsoncxx::type::k_string)){
+//        auto sm4_iv = doc["sm4_iv"].get_string().value.to_string();
+//        for (int i = 0; i < SM4_BLOCK_SIZE; ++i) {
+//            sscanf(sm4_iv.c_str() + i * 2, "%02x", &sm4_iv_arr[i]);
+//        }
+//    }else{
+//        error("%s:Failed to find sm4_iv\n",get_timestamp());
+//        return ERROR_INTERNAL;
+//    }
 
     if(doc["sm3_hmac_key"] && (doc["sm3_hmac_key"].type() == bsoncxx::type::k_string)){
         auto sm3_hmac_key = doc["sm3_hmac_key"].get_string().value.to_string();
         for (int i = 0; i < SM3_HMAC_KEY_SIZE; ++i) {
             sscanf(sm3_hmac_key.c_str() + i * 2, "%02x", &sm3_hmac_key_arr[i]);
         }
+        for (int i = 0; i < SM3_HMAC_KEY_SIZE; ++i) {
+            printf("%02x",sm3_hmac_key_arr[i]);
+        }
+        putchar('\n');
     }else{
         error("%s:Failed to find sm3_hmac_key\n",get_timestamp());
         return ERROR_INTERNAL;
@@ -205,7 +206,19 @@ int decrypt_message(struct mosquitto_evt_message *ed) {
     uint8_t sm4_key_arr[SM4_KEY_SIZE];
     uint8_t sm4_iv_arr[SM4_BLOCK_SIZE];
     std::string uuid;
-    uuid.append((char *)ed->payload,UUID_LEN * 2);
+    mosquitto_log_printf(MOSQ_LOG_INFO,"%s:receive payload:%s",get_timestamp(),ed->payload);
+    char id[UUID_LEN];
+    auto payload = (uint8_t *) mosquitto_malloc(ed->payloadlen/2);
+    auto payload_len = ed->payloadlen / 2;
+    for (int i = 0; i < payload_len; ++i) {
+        sscanf((const char*)ed->payload + i * 2, "%02x", &payload[i]);
+    }
+    // 从payload中解析出uuid
+    for (int i = 0; i < UUID_LEN; ++i) {
+        sscanf(static_cast<const char *>(ed->payload) + i * 2, "%02x", &id[i]);
+        uuid += id[i];
+    }
+    std::cout << uuid << std::endl;
     // 从数据库中读取pem私钥
     if (read_pem(uuid,&sm2_key,sm4_key_arr,sm4_iv_arr,sm3_hmac_key_arr) != EXIT_SUCCESS){
         error("%s:read_pem failed",get_timestamp());
@@ -213,14 +226,8 @@ int decrypt_message(struct mosquitto_evt_message *ed) {
     }
     ERROR ret;
     size_t offset;
-    auto payload = (uint8_t *)mosquitto_malloc(ed->payloadlen/2);
-    size_t payload_len = ed->payloadlen/2;
-    for (int i = 0; i < payload_len; ++i) {
-        sscanf(static_cast<const char *>(ed->payload) + i * 2, "%02x", &payload[i]);
-    }
-    //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:receive payload:%s",get_timestamp(),ed->payload);
     // 从payload头部解析出sm4_key和sm4_iv
-    if ((ret = decrypt_sm4_key_and_iv(payload,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
+    if ((ret = decrypt_sm4_key_and_iv(payload + UUID_LEN,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
         return ret;
     }
     // decrypted_sig_and_msg 是sm4加密后的hmac和msg
@@ -228,17 +235,22 @@ int decrypt_message(struct mosquitto_evt_message *ed) {
     size_t decrypted_sig_and_msg_len;
     if (!decrypted_sig_and_msg) {
         error("%s:decrypt_message_callback: mosquitto_malloc failed", get_timestamp());
-//        mosquitto_log_printf(MOSQ_LOG_ERR, "%s:decrypt_message_callback: mosquitto_malloc failed", get_timestamp());
         return ERROR_INTERNAL;
     }
     sm4_set_decrypt_key(&sm4_key,sm4_key_arr);
     // 解密sig和msg
-    ret = decrypt_sig_and_msg(payload + offset,payload_len - offset,
+    ret = decrypt_sig_and_msg(payload + offset + UUID_LEN,payload_len - offset - UUID_LEN,
                         &sm4_key,sm4_iv_arr,decrypted_sig_and_msg,&decrypted_sig_and_msg_len);
     if (ret != ERROR_SUCCESS){
         mosquitto_log_printf(MOSQ_LOG_ERR,"%s:decrypt_sig_and_msg failed", get_timestamp());
         return ret;
     }
+    printf("decrypted_sig_and_msg_len:%zu\n",decrypted_sig_and_msg_len);
+    printf("decrypted_sig_and_msg:");
+    for (int i = 0; i < decrypted_sig_and_msg_len; ++i) {
+        printf("%02x",decrypted_sig_and_msg[i]);
+    }
+    putchar('\n');
     offset = 70;
     uint8_t hmac[SM3_HMAC_SIZE];
     bool success = false;
@@ -254,8 +266,8 @@ int decrypt_message(struct mosquitto_evt_message *ed) {
     }
     mosquitto_log_printf(MOSQ_LOG_INFO,"%s:sm2_verify success",get_timestamp());
     decrypted_sig_and_msg[decrypted_sig_and_msg_len] = '\0';
-//    mosquitto_log_printf(MOSQ_LOG_INFO,"%s:after decrypt,get msg: %s",get_timestamp(),decrypted_sig_and_msg + offset);
     info("%s:after decrypt,get msg: %s",get_timestamp(),decrypted_sig_and_msg + offset)
+    mosquitto_free(decrypted_sig_and_msg);
     return ERROR_SUCCESS;
 }
 

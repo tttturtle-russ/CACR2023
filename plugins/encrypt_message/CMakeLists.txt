@@ -9,6 +9,6 @@ include_directories(/usr/local/include/mongocxx/v_noabi)
 add_executable(${PLUGIN_NAME}
         mosquitto_message_encrypt.cpp
         graph.hpp
-        path-record.h
+        test.c
 )
 target_link_libraries(${PLUGIN_NAME} gmssl)
