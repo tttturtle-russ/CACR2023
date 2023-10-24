@@ -52,7 +52,7 @@ int read_pem(const std::string& uuid,SM2_KEY *sm2_key,uint8_t sm4_key_arr[SM4_KE
 }
 
 void generate_public(){
-    const char * msg = "i love xj";
+    const char * msg = "xj love me";
     SM2_KEY sm2Key;
     SM4_KEY sm4Key;
     auto uuid = "fc04472f91ff4df58567e7f205f268fa";
@@ -215,6 +215,7 @@ void generate_p2p(){
 int main() {
     mongocxx::instance inst{};
     p = new mongocxx::pool(mongocxx::uri("mongodb://localhost:27017"));
-//    generate_public();
-    generate_p2p();
+    generate_public();
+//    generate_p2p();
+    return 0;
 }

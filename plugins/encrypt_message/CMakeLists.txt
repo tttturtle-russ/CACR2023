@@ -10,5 +10,6 @@ add_executable(${PLUGIN_NAME}
         mosquitto_message_encrypt.cpp
         graph.hpp
         test.cpp
+        util.hpp
 )
 target_link_libraries(${PLUGIN_NAME} gmssl)

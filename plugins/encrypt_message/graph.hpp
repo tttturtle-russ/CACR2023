@@ -16,158 +16,254 @@
 #include <bsoncxx/builder/stream/document.hpp>
 #include <bsoncxx/json.hpp>
 
-struct vertex_info {
-    std::string name;
-    time_t timestamp{};
-};
+namespace Graph{
+    struct vertex_info {
+        std::string name;
+        time_t timestamp{};
+    };
 
-typedef boost::adjacency_list<boost::vecS, boost::vecS, boost::directedS,vertex_info> graph;
+    typedef boost::adjacency_list<boost::vecS, boost::vecS, boost::directedS,vertex_info> graph;
 
-class Graph {
-public:
-    explicit Graph();
-    explicit Graph(std::string  _owner):owner(std::move(_owner)){};
-    explicit Graph(const graph& _g,std::string _owner):g(_g),owner(std::move(_owner)){};
-    Graph(const Graph& _g);
-    ~Graph();
-    graph::vertex_descriptor add_vertex(const std::string &name);
-    void add_edge(graph::vertex_descriptor from, graph::vertex_descriptor to);
-    void set_owner(const std::string &name);
-    graph get_graph();
-    std::string get_owner();
-    std::string get_vertex_name(const graph::vertex_descriptor &v);
-    bool visualization(const std::string &filename);
-    void store(mongocxx::pool *pool);
-    void load(mongocxx::pool *pool);
+    class Graph {
+    public:
+        explicit Graph():p(nullptr){};
+        explicit Graph(const std::string& _owner,mongocxx::pool *_p);
+        explicit Graph(const graph& _g,const std::string& _owner,mongocxx::pool *_p):g(_g),owner(_owner),p(_p){};
+        Graph(const Graph& _g);
+        ~Graph();
+        graph::vertex_descriptor add_vertex(const std::string &name);
+        void set_owner(const std::string &name);
+        graph get_graph();
+        std::string get_owner();
+        std::string get_vertex_name(const graph::vertex_descriptor &v);
+        bool visualization(const std::string &filename);
+        void store(mongocxx::pool *pool);
+        void load(mongocxx::pool *pool);
+        void update(mongocxx::pool *pool);
+        void add_edge(graph::vertex_descriptor source,graph::vertex_descriptor target);
+        unsigned long size();
+    private:
+        graph g;
+        std::string owner;
+        time_t timestamp{};
+        mongocxx::pool *p;
+    };
 
-private:
-    graph g;
-    std::string owner;
-};
 
-Graph::Graph() {
-    this->g = graph();
-    this->owner = "";
-}
-
-Graph::Graph(const Graph &_g) {
-    this->g = _g.g;
-    this->owner = _g.owner;
-}
-
-graph::vertex_descriptor Graph::add_vertex(const std::string &name) {
-    vertex_info v_info;
-    // 设置节点名称
-    v_info.name = name;
-    boost::add_vertex(this->g);
-    // 设置节点时间戳
-    v_info.timestamp = time(nullptr);
-    return boost::add_vertex(v_info, this->g);
-}
-
-void Graph::add_edge(graph::vertex_descriptor from, graph::vertex_descriptor to) {
-    boost::add_edge(from, to, this->g);
-}
-
-void Graph::set_owner(const std::string &name) {
-    this->owner = name;
-}
-
-std::string Graph::get_owner() {
-    return this->owner;
-}
-
-std::string Graph::get_vertex_name(const graph::vertex_descriptor &v) {
-    return this->g[v].name;
-}
-
-bool Graph::visualization(const std::string &filename) {
-    if (filename.empty()){
-        fprintf(stderr,"No Such Path\n");
-        return false;
+    Graph::Graph(const Graph &_g) {
+        this->g = _g.g;
+        this->owner = _g.owner;
+        this->timestamp = _g.timestamp;
+        this->p = _g.p;
     }
-    auto surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 1920, 1080);
-    auto cr = cairo_create(surface);
-    // 画出背景，白色
-    cairo_set_source_rgb(cr, 1, 1, 1);
-    cairo_paint(cr);
 
-    return cairo_surface_write_to_png(surface, filename.c_str()) == CAIRO_STATUS_SUCCESS;
+    graph::vertex_descriptor Graph::add_vertex(const std::string &name) {
+        vertex_info v_info;
+        // 设置节点名称
+        v_info.name = name;
+        // 设置节点时间戳
+        v_info.timestamp = time(nullptr);
+        return boost::add_vertex(v_info,this->g);
+    }
+
+    void Graph::set_owner(const std::string &name) {
+        this->owner = name;
+    }
+
+    Graph::Graph(const std::string& _owner,mongocxx::pool *_p):owner(_owner),p(_p) {
+        this->timestamp = time(nullptr);
+        auto client = this->p->try_acquire();
+        if (!client) {
+            fprintf(stderr, "Failed to pop client from pool.\n");
+            return;
+        }
+        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        if (!graph_collection) {
+            fprintf(stderr, "Failed to get collection.\n");
+            return;
+        }
+        bsoncxx::builder::stream::document filter_builder;
+        filter_builder << "owner" << this->owner;
+        filter_builder << "timestamp" << bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->timestamp)};
+        if (graph_collection.count_documents(filter_builder.view()) <= 0){
+            bsoncxx::builder::stream::document doc_builder;
+            doc_builder << "owner" << this->owner;
+            doc_builder << "timestamp" << bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->timestamp)};
+            doc_builder << "edges" << bsoncxx::builder::stream::open_array << bsoncxx::builder::stream::close_array;
+            graph_collection.insert_one(doc_builder.view());
+            std::cout << "插入新的文档成功。" << std::endl;
+            return;
+        }
+    }
+
+    void Graph::add_edge(graph::vertex_descriptor source,graph::vertex_descriptor target){
+        auto result = boost::add_edge(source,target,this->g);
+        auto client = this->p->try_acquire();
+        if (!client) {
+            fprintf(stderr, "Failed to pop client from pool.\n");
+            return;
+        }
+        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        if (!graph_collection) {
+            fprintf(stderr, "Failed to get collection.\n");
+            return;
+        }
+        if (result.second){
+            auto _source = boost::source(result.first, this->g);
+            auto _target = boost::target(result.first, this->g);
+            bsoncxx::builder::basic::document doc;
+            doc.append(bsoncxx::builder::basic::kvp("source_vertex_name",this->g[_source].name));
+            doc.append(bsoncxx::builder::basic::kvp("source_vertex_time",bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->g[_source].timestamp)}));
+            doc.append(bsoncxx::builder::basic::kvp("target_vertex_name",this->g[_target].name));
+            doc.append(bsoncxx::builder::basic::kvp("target_vertex_time",bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->g[_target].timestamp)}));
+            bsoncxx::builder::stream::document filter_builder;
+            filter_builder << "owner" << this->owner;
+            filter_builder << "timestamp" << bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->timestamp)};
+            if (graph_collection.count_documents(filter_builder.view()) <= 0){
+                bsoncxx::builder::stream::document doc_builder;
+                doc_builder << "owner" << this->owner;
+                doc_builder << "timestamp" << bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->timestamp)};
+                doc_builder << "edges" << bsoncxx::builder::stream::open_array << doc << bsoncxx::builder::stream::close_array;
+                graph_collection.insert_one(doc_builder.view());
+                std::cout << "插入新的文档成功。" << std::endl;
+                return;
+            }
+            bsoncxx::builder::stream::document update_builder;
+            update_builder << "$push" << bsoncxx::builder::stream::open_document <<
+                     "edges" << doc << bsoncxx::builder::stream::close_document;
+            auto result = graph_collection.update_one(filter_builder.view(),update_builder.view());
+            if (result) {
+                if (result->modified_count() > 0) {
+                    std::cout << "数组字段更新成功。" << std::endl;
+                } else {
+                    std::cout << "没有匹配的文档需要更新。" << std::endl;
+                }
+            } else {
+                std::cerr << "更新操作失败。" << std::endl;
+            }
+        }
+    }
+    std::string Graph::get_owner() {
+        return this->owner;
+    }
+
+    std::string Graph::get_vertex_name(const graph::vertex_descriptor &v) {
+        return this->g[v].name;
+    }
+
+    bool Graph::visualization(const std::string &filename) {
+        if (filename.empty()){
+            fprintf(stderr,"No Such Path\n");
+            return false;
+        }
+        auto surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 1920, 1080);
+        auto cr = cairo_create(surface);
+        // 画出背景，白色
+        cairo_set_source_rgb(cr, 1, 1, 1);
+        cairo_paint(cr);
+
+        return cairo_surface_write_to_png(surface, filename.c_str()) == CAIRO_STATUS_SUCCESS;
+    }
+
+    void Graph::store(mongocxx::pool *pool) {
+        auto client = pool->try_acquire();
+        if (!client) {
+            fprintf(stderr, "Failed to pop client from pool.\n");
+            return;
+        }
+        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        if (!graph_collection) {
+            fprintf(stderr, "Failed to get collection.\n");
+            return;
+        }
+        auto doc_builder = bsoncxx::builder::basic::document{};
+        auto vertexs = bsoncxx::builder::basic::array{};
+//        BGL_FORALL_EDGES(e,this->g,graph){
+//                auto source = boost::source(e,this->g);
+//                auto target = boost::target(e,this->g);
+//                bsoncxx::builder::basic::document doc;
+//                doc.append(bsoncxx::builder::basic::kvp("source_vertex_name",this->g[source].name));
+//                doc.append(bsoncxx::builder::basic::kvp("source_vertex_time",bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->g[source].timestamp)}));
+//                doc.append(bsoncxx::builder::basic::kvp("target_vertex_name",this->g[target].name));
+//                doc.append(bsoncxx::builder::basic::kvp("target_vertex_time",bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->g[target].timestamp)}));
+//                vertexs.append(doc);
+//            }
+        doc_builder.append(bsoncxx::builder::basic::kvp("owner",this->owner));
+        doc_builder.append(bsoncxx::builder::basic::kvp("timestamp",bsoncxx::types::b_date{std::chrono::system_clock::now()}));
+//        doc_builder.append(bsoncxx::builder::basic::kvp("edges",vertexs));
+        graph_collection.insert_one(doc_builder.view());
+    }
+
+    void Graph::load(mongocxx::pool *pool) {
+        auto client = pool->try_acquire();
+        if (!client) {
+            fprintf(stderr, "Failed to pop client from pool.\n");
+            return;
+        }
+        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        if (!graph_collection) {
+            fprintf(stderr, "Failed to get collection.\n");
+            return;
+        }
+        auto doc = bsoncxx::builder::stream::document{};
+        doc << "owner" << this->owner;
+        auto cursor = graph_collection.find_one(doc.view());
+        if (!cursor) {
+            fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
+            return;
+        }
+        auto element = cursor->view()["edges"];
+        if (!element) {
+            fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
+            return;
+        }
+        auto array = element.get_array().value;
+        for (const auto &item: array){
+            auto source_vertex_name = item["source_vertex_name"].get_string().value.to_string();
+            auto source_vertex_time = item["source_vertex_time"].get_date();
+            auto target_vertex_name = item["target_vertex_name"].get_string().value.to_string();
+            auto target_vertex_time = item["target_vertex_time"].get_date();
+            auto source_vertex = this->add_vertex(source_vertex_name);
+            auto target_vertex = this->add_vertex(target_vertex_name);
+            this->add_edge(source_vertex,target_vertex);
+            this->g[source_vertex].timestamp = std::chrono::system_clock::to_time_t(source_vertex_time);
+            this->g[target_vertex].timestamp = std::chrono::system_clock::to_time_t(target_vertex_time);
+        }
+    }
+
+    Graph::~Graph() {
+        g.clear();
+    }
+
+    graph Graph::get_graph() {
+        return this->g;
+    }
+
+    unsigned long Graph::size() {
+        return boost::num_vertices(this->g);
+    }
+
+    void Graph::update(mongocxx::pool *pool) {
+        auto client = pool->try_acquire();
+        if (!client) {
+            fprintf(stderr, "Failed to pop client from pool.\n");
+            return;
+        }
+        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        if (!graph_collection) {
+            fprintf(stderr, "Failed to get collection.\n");
+            return;
+        }
+        auto doc_builder = bsoncxx::builder::basic::document{};
+        auto update_builder = bsoncxx::builder::stream::document{};
+        doc_builder.append(bsoncxx::builder::basic::kvp("owner",this->owner));
+
+    }
+
+
+
 }
 
-void Graph::store(mongocxx::pool *pool) {
-    auto client = pool->try_acquire();
-    if (!client) {
-        fprintf(stderr, "Failed to pop client from pool.\n");
-        return;
-    }
-    auto graph_collection = (*client)->database("mqtt").collection("graph_collection");
-    if (!graph_collection) {
-        fprintf(stderr, "Failed to get collection.\n");
-        return;
-    }
-    auto doc_builder = bsoncxx::builder::basic::document{};
-    auto vertexs = bsoncxx::builder::basic::array{};
-    BGL_FORALL_EDGES(e,this->g,graph){
-        auto source = boost::source(e,this->g);
-        auto target = boost::target(e,this->g);
-        bsoncxx::builder::basic::document doc;
-        doc.append(bsoncxx::builder::basic::kvp("source_vertex_name",this->g[source].name));
-        doc.append(bsoncxx::builder::basic::kvp("source_vertex_time",bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->g[source].timestamp)}));
-        doc.append(bsoncxx::builder::basic::kvp("target_vertex_name",this->g[target].name));
-        doc.append(bsoncxx::builder::basic::kvp("target_vertex_time",bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->g[target].timestamp)}));
-        vertexs.append(doc);
-    }
-    doc_builder.append(bsoncxx::builder::basic::kvp("owner",this->owner));
-    doc_builder.append(bsoncxx::builder::basic::kvp("timestamp",bsoncxx::types::b_date{std::chrono::system_clock::now()}));
-    doc_builder.append(bsoncxx::builder::basic::kvp("edges",vertexs));
-    graph_collection.insert_one(doc_builder.view());
-}
-
-void Graph::load(mongocxx::pool *pool) {
-    auto client = pool->try_acquire();
-    if (!client) {
-        fprintf(stderr, "Failed to pop client from pool.\n");
-        return;
-    }
-    auto graph_collection = (*client)->database("mqtt").collection("graph_collection");
-    if (!graph_collection) {
-        fprintf(stderr, "Failed to get collection.\n");
-        return;
-    }
-    auto doc = bsoncxx::builder::stream::document{};
-    doc << "owner" << this->owner;
-    auto cursor = graph_collection.find_one(doc.view());
-    if (!cursor) {
-        fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
-        return;
-    }
-    auto element = cursor->view()["edges"];
-    if (!element) {
-        fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
-        return;
-    }
-    auto array = element.get_array().value;
-    for (const auto &item: array){
-        auto source_vertex_name = item["source_vertex_name"].get_string().value.to_string();
-        auto source_vertex_time = item["source_vertex_time"].get_date();
-        auto target_vertex_name = item["target_vertex_name"].get_string().value.to_string();
-        auto target_vertex_time = item["target_vertex_time"].get_date();
-        auto source_vertex = this->add_vertex(source_vertex_name);
-        auto target_vertex = this->add_vertex(target_vertex_name);
-        this->add_edge(source_vertex,target_vertex);
-        this->g[source_vertex].timestamp = std::chrono::system_clock::to_time_t(source_vertex_time);
-        this->g[target_vertex].timestamp = std::chrono::system_clock::to_time_t(target_vertex_time);
-    }
-}
-
-Graph::~Graph() {
-    g.clear();
-}
-
-graph Graph::get_graph() {
-    return this->g;
-}
 
 
 #endif //MOSQUITTO_MESSAGE_ENCRYPT_GRAPH_HPP
