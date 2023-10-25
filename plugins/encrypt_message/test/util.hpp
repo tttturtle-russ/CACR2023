@@ -110,7 +110,6 @@ int util::read_pem(const std::string& uuid,SM2_KEY *sm2_key,uint8_t sm3_hmac_key
         FILE* fp = fmemopen((void *) private_key.c_str(), private_key.length(), "r");
         sm2_private_key_info_decrypt_from_pem(sm2_key,std::to_string(pass).c_str(),fp);
         fclose(fp);
-        sm2_key_print(stdout,0,0,"", sm2_key);
     }else{
         return ERROR_INTERNAL;
     }
@@ -182,7 +181,6 @@ ERROR util::decrypt_sm4_key_and_iv(uint8_t * payload,
     }
     uint8_t buf[SM4_KEY_SIZE + SM4_BLOCK_SIZE];
     bool success = false;
-    sm2_key_print(stdout,0,0,"",sm2_key);
     for (int i = 138; i <= 143; ++i) {
         if(sm2_decrypt(sm2_key, payload, i, buf, offset) != 1){
             continue;
@@ -198,10 +196,6 @@ ERROR util::decrypt_sm4_key_and_iv(uint8_t * payload,
     //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:success decrypt sm4 key and iv",util::get_timestamp().c_str());
     memcpy(sm4_key_arr,buf,SM4_KEY_SIZE);
     memcpy(sm4_iv_arr,buf+SM4_KEY_SIZE,SM4_BLOCK_SIZE);
-    for (int i = 0; i < 32; ++i) {
-        printf("%02x",buf[i]);
-    }
-    putchar('\n');
     return ERROR_SUCCESS;
 }
 
