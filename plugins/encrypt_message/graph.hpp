@@ -28,7 +28,7 @@ namespace Graph{
     public:
         explicit Graph():p(nullptr){};
         explicit Graph(const std::string& _owner,mongocxx::pool *_p);
-        explicit Graph(const graph& _g,const std::string& _owner,mongocxx::pool *_p):g(_g),owner(_owner),p(_p){};
+        explicit Graph(const graph& _g,std::string  _owner,mongocxx::pool *_p):g(_g),owner(std::move(_owner)),p(_p){};
         Graph(const Graph& _g);
         ~Graph();
         graph::vertex_descriptor add_vertex(const std::string &name);

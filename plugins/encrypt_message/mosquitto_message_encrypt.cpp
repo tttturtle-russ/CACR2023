@@ -20,55 +20,55 @@ FILE* log_;
 mongocxx::pool *p = nullptr;
 std::map<std::string,Graph::Graph> m;
 
-ERROR decrypt_sm4_key_and_iv(uint8_t * payload,
-                             SM2_KEY * sm2_key,
-                             uint8_t sm4_key_arr[SM4_KEY_SIZE],
-                             uint8_t sm4_iv_arr[SM4_BLOCK_SIZE],
-                             size_t *offset
-){
-    if (payload == nullptr) {
-        error("%s:payload is null",util::get_timestamp().c_str());
-        //mosquitto_log_printf(MOSQ_LOG_ERR,"%s:payload is null",util::get_timestamp().c_str());
-        return ERROR_DATA;
-    }
-    uint8_t buf[SM4_KEY_SIZE + SM4_BLOCK_SIZE];
-    bool success = false;
-    //sm2_key_print(stdout,0,0,"",sm2_key);
-    for (int i = 138; i <= 143; ++i) {
-        if(sm2_decrypt(sm2_key, payload, i, buf, offset) != 1){
-            continue;
-        }
-        success = true;
-        *offset = i ;
-        break;
-    }
-    if(!success) {
-        error("%s:failed to decrypt sm4 key and iv",util::get_timestamp().c_str())
-        return ERROR_DECRYPT;
-    }
-    info("%s:success decrypt sm4 key and iv",util::get_timestamp().c_str())
-    //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:success decrypt sm4 key and iv",util::get_timestamp().c_str());
-    memcpy(sm4_key_arr,buf,SM4_KEY_SIZE);
-    memcpy(sm4_iv_arr,buf+SM4_KEY_SIZE,SM4_BLOCK_SIZE);
-    for (int i = 0; i < 32; ++i) {
-        printf("%02x",sm4_key_arr[i]);
-    }
-    putchar('\n');
-    return ERROR_SUCCESS;
-}
-
-ERROR decrypt_sig_and_msg(uint8_t* cipher,
-                          size_t cipher_len,
-                          SM4_KEY *sm4_key,
-                          uint8_t sm4_iv_arr[SM4_BLOCK_SIZE],
-                          uint8_t* decrypted_sig_and_msg,
-                          size_t *decrypted_sig_and_msg_len)
-{
-    int ret = sm4_cbc_padding_decrypt(sm4_key,sm4_iv_arr,cipher,cipher_len,decrypted_sig_and_msg,decrypted_sig_and_msg_len);
-    if (ret == 1)
-        return ERROR_SUCCESS;
-    return ERROR_DECRYPT;
-}
+//ERROR decrypt_sm4_key_and_iv(uint8_t * payload,
+//                             SM2_KEY * sm2_key,
+//                             uint8_t sm4_key_arr[SM4_KEY_SIZE],
+//                             uint8_t sm4_iv_arr[SM4_BLOCK_SIZE],
+//                             size_t *offset
+//){
+//    if (payload == nullptr) {
+//        error("%s:payload is null",util::get_timestamp().c_str());
+//        //mosquitto_log_printf(MOSQ_LOG_ERR,"%s:payload is null",util::get_timestamp().c_str());
+//        return ERROR_DATA;
+//    }
+//    uint8_t buf[SM4_KEY_SIZE + SM4_BLOCK_SIZE];
+//    bool success = false;
+//    //sm2_key_print(stdout,0,0,"",sm2_key);
+//    for (int i = 138; i <= 143; ++i) {
+//        if(sm2_decrypt(sm2_key, payload, i, buf, offset) != 1){
+//            continue;
+//        }
+//        success = true;
+//        *offset = i ;
+//        break;
+//    }
+//    if(!success) {
+//        error("%s:failed to decrypt sm4 key and iv",util::get_timestamp().c_str())
+//        return ERROR_DECRYPT;
+//    }
+//    info("%s:success decrypt sm4 key and iv",util::get_timestamp().c_str())
+//    //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:success decrypt sm4 key and iv",util::get_timestamp().c_str());
+//    memcpy(sm4_key_arr,buf,SM4_KEY_SIZE);
+//    memcpy(sm4_iv_arr,buf+SM4_KEY_SIZE,SM4_BLOCK_SIZE);
+//    for (int i = 0; i < 32; ++i) {
+//        printf("%02x",sm4_key_arr[i]);
+//    }
+//    putchar('\n');
+//    return ERROR_SUCCESS;
+//}
+//
+//ERROR decrypt_sig_and_msg(uint8_t* cipher,
+//                          size_t cipher_len,
+//                          SM4_KEY *sm4_key,
+//                          uint8_t sm4_iv_arr[SM4_BLOCK_SIZE],
+//                          uint8_t* decrypted_sig_and_msg,
+//                          size_t *decrypted_sig_and_msg_len)
+//{
+//    int ret = sm4_cbc_padding_decrypt(sm4_key,sm4_iv_arr,cipher,cipher_len,decrypted_sig_and_msg,decrypted_sig_and_msg_len);
+//    if (ret == 1)
+//        return ERROR_SUCCESS;
+//    return ERROR_DECRYPT;
+//}
 
 //int read_pem(const std::string& uuid,SM2_KEY *sm2_key,uint8_t sm3_hmac_key_arr[SM3_HMAC_KEY_SIZE]) {
 //    auto client = p->try_acquire();
@@ -127,7 +127,7 @@ std::string decrypt_message(uint8_t* payload,size_t payload_len,const std::strin
     ERROR ret;
     size_t offset;
     // 从payload头部解析出sm4_key和sm4_iv
-    if ((ret = decrypt_sm4_key_and_iv(payload + UUID_LEN,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
+    if ((ret = util::decrypt_sm4_key_and_iv(payload + UUID_LEN,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
         return "";
     }
     // decrypted_sig_and_msg 是sm4加密后的hmac和msg
@@ -139,7 +139,7 @@ std::string decrypt_message(uint8_t* payload,size_t payload_len,const std::strin
     }
     sm4_set_decrypt_key(&sm4_key,sm4_key_arr);
     // 解密sig和msg
-    ret = decrypt_sig_and_msg(payload + offset + UUID_LEN,payload_len - offset - UUID_LEN,
+    ret = util::decrypt_sig_and_msg(payload + offset + UUID_LEN,payload_len - offset - UUID_LEN,
                         &sm4_key,sm4_iv_arr,decrypted_sig_and_msg,&decrypted_sig_and_msg_len);
     if (ret != ERROR_SUCCESS){
         mosquitto_log_printf(MOSQ_LOG_ERR,"%s:decrypt_sig_and_msg failed", util::get_timestamp().c_str());
@@ -187,10 +187,15 @@ int public_handler(struct mosquitto_evt_message *ed){
         error("%s:read_pem failed",util::get_timestamp().c_str())
         return ERROR_INTERNAL;
     }
+    printf("sm3 key:");
+    for (int i = 0; i < SM3_HMAC_KEY_SIZE; ++i) {
+        printf("%02x",sm3_hmac_key_arr[i]);
+    }
+    putchar('\n');
     ERROR ret;
     size_t offset;
     // 从payload头部解析出sm4_key和sm4_iv
-    if ((ret = decrypt_sm4_key_and_iv(payload + UUID_LEN,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
+    if ((ret = util::decrypt_sm4_key_and_iv(payload + UUID_LEN,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
         return ret;
     }
     // decrypted_sig_and_msg 是sm4加密后的hmac和msg
@@ -203,17 +208,28 @@ int public_handler(struct mosquitto_evt_message *ed){
     sm4_set_decrypt_key(&sm4_key,sm4_key_arr);
     // 解密sig和msg
 
-    ret = decrypt_sig_and_msg(payload + offset + UUID_LEN,payload_len - offset - UUID_LEN,
+    ret = util::decrypt_sig_and_msg(payload + offset + UUID_LEN,payload_len - offset - UUID_LEN,
                               &sm4_key,sm4_iv_arr,decrypted_sig_and_msg,&decrypted_sig_and_msg_len);
     if (ret != ERROR_SUCCESS){
         mosquitto_log_printf(MOSQ_LOG_ERR,"%s:decrypt_sig_and_msg failed", util::get_timestamp().c_str());
         return ret;
     }
+    mosquitto_log_printf(MOSQ_LOG_INFO,"%s:decrypt_sig_and_msg success", util::get_timestamp().c_str());
     offset = 70;
     uint8_t hmac[SM3_HMAC_SIZE];
     bool success = false;
     for (; offset <= 72; ++offset) {
         sm3_hmac(sm3_hmac_key_arr,SM3_HMAC_KEY_SIZE,decrypted_sig_and_msg + offset,decrypted_sig_and_msg_len - offset,hmac);
+        printf("hmac:");
+        for (int i = 0; i < SM3_HMAC_SIZE; ++i) {
+            printf("%02x",hmac[i]);
+        }
+        putchar('\n');
+        printf("sig:");
+        for (int i = 0; i < offset; ++i) {
+            printf("%02x",decrypted_sig_and_msg[i]);
+        }
+        printf("\n");
         success = sm2_verify(&sm2_key,hmac,decrypted_sig_and_msg,offset) == 1;
         if (success)
             break;
@@ -264,6 +280,8 @@ int p2p_handler(struct mosquitto_evt_message *ed){
     }
     // 从payload中解析出uuid
     sender_uuid = util::get_uuid(static_cast<const char*>(ed->payload));
+    std::cout << "sender uuid" << sender_uuid << std::endl;
+    std::cout << "receiver uuid" << receiver_uuid << std::endl;
     // 从数据库中读取pem私钥
     if (util::read_pem(p,database,receiver_uuid, &sm2_key, sm3_hmac_key_arr) != EXIT_SUCCESS){
         free(sm3_hmac_key_arr);
@@ -276,7 +294,7 @@ int p2p_handler(struct mosquitto_evt_message *ed){
     ERROR ret;
     size_t offset;
     // 从payload头部解析出sm4_key和sm4_iv
-    if ((ret = decrypt_sm4_key_and_iv(payload + UUID_LEN,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
+    if ((ret = util::decrypt_sm4_key_and_iv(payload + UUID_LEN,&sm2_key,sm4_key_arr,sm4_iv_arr,&offset)) != ERROR_SUCCESS){
         free(sm3_hmac_key_arr);
         free(sm4_key_arr);
         free(sm4_iv_arr);
@@ -302,7 +320,7 @@ int p2p_handler(struct mosquitto_evt_message *ed){
     sm4_set_decrypt_key(&sm4_key,sm4_key_arr);
     sm2_key_print(stdout,0,0,"",&sm2_key);
     // 解密sig和msg
-    ret = decrypt_sig_and_msg(payload + offset + UUID_LEN,payload_len - offset - UUID_LEN,
+    ret = util::decrypt_sig_and_msg(payload + offset + UUID_LEN,payload_len - offset - UUID_LEN,
                               &sm4_key,sm4_iv_arr,decrypted_sig_and_msg,&decrypted_sig_and_msg_len);
     if (ret != ERROR_SUCCESS){
         mosquitto_log_printf(MOSQ_LOG_ERR,"%s:decrypt_sig_and_msg failed", util::get_timestamp().c_str());
