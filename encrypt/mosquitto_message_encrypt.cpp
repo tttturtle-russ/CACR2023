@@ -327,6 +327,7 @@ int mosquitto_plugin_version(int supported_version_count, const int *supported_v
 }
 
 int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, struct mosquitto_opt *opts, int opt_count){
+    logger::info("Starting plugin mosquitto_message_encrypt\n");
     if (fileno(stderr) == fileno(stdout)) {
         std::cerr << "stderr and stdout are associated." << std::endl;
     }else {
@@ -335,24 +336,54 @@ int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, s
         freopen("/dev/null", "w", stderr);
     }
     mosq_pid = identifier;
-    std::string uri_str;
-    uri_str.append("mongodb://");
+    std::string uri_str("mongodb://");
+    bool read_addr = false;
+    bool read_port = false;
+    bool read_connopts = false;
+    bool read_dbname = false;
+    std::string addr;
+    std::string port;
+    std::string connopts;
     for (int i = 0; i < opt_count; ++i) {
         if (!strcmp(opts[i].key,"db_addr")){
-            uri_str.append(opts[i].value);
+            logger::info("Reading db address...\n");
+            addr = opts[i].value;
+            read_addr = true;
         }else if (!strcmp(opts[i].key,"db_port")){
-            uri_str.append(":");
-            uri_str.append(opts[i].value);
-            uri_str.append("/");
+            logger::info("Reading db port...\n");
+            port = opts[i].value;
+            read_port = true;
         }else if (!strcmp(opts[i].key,"db_connopts")){
-            uri_str.append("?");
-            uri_str.append(opts[i].value);
+            logger::info("Reading db connopts...\n");
+            connopts = opts[i].value;
+            read_connopts = true;
         }else if (!strcmp(opts[i].key,"db_name")){
+            logger::info("Reading db name...\n");
             database = opts[i].value;
+            read_dbname = true;
         }
     }
+    if (!read_addr){
+        logger::error("db_addr not found.Please specify db address in mosquitto.conf\n");
+        return MOSQ_ERR_INVAL;
+    }
+    if (!read_port){
+        logger::error("db_port not found.use 27017 as default\n");
+        port = "27017";
+    }
+    if (!read_dbname) {
+        logger::error("db_name not found.Please specify db name in mosquitto.conf\n");
+        return MOSQ_ERR_INVAL;
+    }
+    uri_str += addr + ":" + port + "/";
+    if (!read_connopts){
+        logger::error("db_connopts not found.use default connopts\n");
+        connopts = "";
+    }else {
+        uri_str += "?" + connopts;
+    }
     mongocxx::instance instance{};
-    p = new mongocxx::pool(mongocxx::uri("mongodb://localhost:27017"));
+    p = new mongocxx::pool(mongocxx::uri(uri_str));
     return mosquitto_callback_register(mosq_pid, MOSQ_EVT_MESSAGE, decrypt_message_callback, nullptr, nullptr);
 }
 
