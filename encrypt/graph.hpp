@@ -9,7 +9,6 @@
 #include <boost/graph/graphviz.hpp>
 #include <utility>
 #include <filesystem>
-#include <cairo/cairo.h>
 #include <mongocxx/uri.hpp>
 #include <mongocxx/pool.hpp>
 #include <mongocxx/client.hpp>
@@ -92,7 +91,7 @@ namespace Graph{
             doc_builder << "timestamp" << bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->timestamp)};
             doc_builder << "edges" << bsoncxx::builder::stream::open_array << bsoncxx::builder::stream::close_array;
             graph_collection.insert_one(doc_builder.view());
-            std::cout << "插入新的文档成功。" << std::endl;
+            logger::info("Success insert new graph.\n");
             return;
         }
     }
@@ -126,7 +125,7 @@ namespace Graph{
                 doc_builder << "timestamp" << bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->timestamp)};
                 doc_builder << "edges" << bsoncxx::builder::stream::open_array << doc << bsoncxx::builder::stream::close_array;
                 graph_collection.insert_one(doc_builder.view());
-                std::cout << "插入新的文档成功。" << std::endl;
+                logger::info("Success insert new graph.\n");
                 return;
             }
             bsoncxx::builder::stream::document update_builder;
@@ -135,12 +134,12 @@ namespace Graph{
             auto result = graph_collection.update_one(filter_builder.view(),update_builder.view());
             if (result) {
                 if (result->modified_count() > 0) {
-                    std::cout << "数组字段更新成功。" << std::endl;
+                    logger::info("Success update graph.\n");
                 } else {
-                    std::cout << "没有匹配的文档需要更新。" << std::endl;
+                    logger::info("No matched document need to update.\n");
                 }
             } else {
-                std::cerr << "更新操作失败。" << std::endl;
+                logger::error("Failed to update graph.\n");
             }
         }
     }
@@ -154,7 +153,7 @@ namespace Graph{
 
     void Graph::visualization(const std::string &filename) {
         if (filename.empty()){
-            fprintf(stderr,"No Such Path\n");
+            logger::error("No such file or directory\n");
             return;
         }
         std::ofstream file(filename);
@@ -166,12 +165,14 @@ namespace Graph{
     void Graph::store(mongocxx::pool *pool) {
         auto client = pool->try_acquire();
         if (!client) {
-            fprintf(stderr, "Failed to pop client from pool.\n");
+//            fprintf(stderr, "Failed to pop client from pool.\n");
+            logger::error("Failed to pop client from pool.\n");
             return;
         }
         auto graph_collection = (*client)->database("mqtt").collection("graph");
         if (!graph_collection) {
-            fprintf(stderr, "Failed to get collection.\n");
+            logger::error("Failed to get collection.\n");
+//            fprintf(stderr, "Failed to get collection.\n");
             return;
         }
         auto doc_builder = bsoncxx::builder::basic::document{};
@@ -184,12 +185,14 @@ namespace Graph{
     void Graph::load(mongocxx::pool *pool) {
         auto client = pool->try_acquire();
         if (!client) {
-            fprintf(stderr, "Failed to pop client from pool.\n");
+            logger::error("Failed to pop client from pool.\n");
+//            fprintf(stderr, "Failed to pop client from pool.\n");
             return;
         }
         auto graph_collection = (*client)->database("mqtt").collection("graph");
         if (!graph_collection) {
-            fprintf(stderr, "Failed to get collection.\n");
+            logger::error("Failed to get collection.\n");
+//            fprintf(stderr, "Failed to get collection.\n");
             return;
         }
         auto doc = bsoncxx::builder::stream::document{};
@@ -197,12 +200,14 @@ namespace Graph{
         doc << "timestamp" << bsoncxx::types::b_date{std::chrono::system_clock::from_time_t(this->timestamp)};
         auto cursor = graph_collection.find_one(doc.view());
         if (!cursor) {
-            fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
+            logger::error("No Such Graph:%s\n",this->owner.c_str());
+//            fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
             return;
         }
         auto element = cursor->view()["edges"];
         if (!element) {
-            fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
+            logger::error("No Such Graph:%s\n",this->owner.c_str());
+//            fprintf(stderr, "No Such Graph:%s\n",this->owner.c_str());
             return;
         }
         auto array = element.get_array().value;
@@ -234,20 +239,20 @@ namespace Graph{
     void Graph::update(mongocxx::pool *pool) {
         auto client = pool->try_acquire();
         if (!client) {
-            fprintf(stderr, "Failed to pop client from pool.\n");
+            logger::error("Failed to pop client from pool.\n");
+//            fprintf(stderr, "Failed to pop client from pool.\n");
             return;
         }
         auto graph_collection = (*client)->database("mqtt").collection("graph");
         if (!graph_collection) {
-            fprintf(stderr, "Failed to get collection.\n");
+            logger::error("Failed to get collection.\n");
+//            fprintf(stderr, "Failed to get collection.\n");
             return;
         }
         auto doc_builder = bsoncxx::builder::basic::document{};
         auto update_builder = bsoncxx::builder::stream::document{};
         doc_builder.append(bsoncxx::builder::basic::kvp("owner",this->owner));
-
     }
-
 }
 
 

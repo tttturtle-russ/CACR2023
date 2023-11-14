@@ -27,9 +27,7 @@
 
 #define UUID_LEN 32
 #define SM3_HMAC_KEY_SIZE 16
-#define info(fmt,...) {mosquitto_log_printf(MOSQ_LOG_INFO,fmt,__VA_ARGS__);fprintf(log_,fmt,__VA_ARGS__);}
-#define warn(fmt,...) {mosquitto_log_printf(MOSQ_LOG_WARNING,fmt,__VA_ARGS__);fprintf(log_,fmt,__VA_ARGS__);}
-#define error(fmt,...) {mosquitto_log_printf(MOSQ_LOG_ERR,fmt,__VA_ARGS__);fprintf(log_,fmt,__VA_ARGS__);}
+
 
 enum ERROR {
     ERROR_SUCCESS = 0,
@@ -43,6 +41,9 @@ enum ERROR {
 extern FILE* log_;
 
 namespace util{
+//    #define info(fmt,...) {mosquitto_log_printf(MOSQ_LOG_INFO,fmt,__VA_ARGS__);fprintf(log_,fmt,__VA_ARGS__);}
+//    #define warn(fmt,...) {mosquitto_log_printf(MOSQ_LOG_WARNING,fmt,__VA_ARGS__);fprintf(log_,fmt,__VA_ARGS__);}
+////    #define error(fmt,...) {mosquitto_log_printf(MOSQ_LOG_ERR,fmt,__VA_ARGS__);fprintf(log_,fmt,__VA_ARGS__);}
     std::string get_timestamp();
     std::string get_uuid(const char *payload);
     bool insert_public_message(mongocxx::pool *p,const std::string & database,const std::string & uuid,const std::string & message);
@@ -76,10 +77,9 @@ std::string util::get_timestamp(){
 
 std::string util::get_uuid(const char *payload){
     std::string uuid;
-    char id[UUID_LEN];
     for (int i = 0; i < UUID_LEN; ++i) {
-        sscanf(payload + i * 2, "%02x", &id[i]);
-        uuid += id[i];
+//        sscanf(payload + i * 2, "%02x", &id[i]);
+        uuid += payload[i];
     }
     return uuid;
 }
@@ -87,18 +87,18 @@ std::string util::get_uuid(const char *payload){
 int util::read_pem(mongocxx::pool *p,const std::string & database,const std::string& uuid,SM2_KEY *sm2_key,uint8_t sm3_hmac_key_arr[SM3_HMAC_KEY_SIZE]) {
     auto client = p->try_acquire();
     if (!client) {
-        error("%s:Failed to pop client pool\n",util::get_timestamp().c_str());
+//        error("%s:Failed to pop client pool\n",util::get_timestamp().c_str());
         return ERROR_INTERNAL;
     }
     auto pems = (*client)->database(database).collection("pems");
     if (!pems){
-        error("%s:Failed to get collection\n",util::get_timestamp().c_str());
+//        error("%s:Failed to get collection\n",util::get_timestamp().c_str());
         return ERROR_INTERNAL;
     }
     auto query = bsoncxx::builder::stream::document{} << "uuid" << uuid << bsoncxx::builder::stream::finalize;
     auto cursor = pems.find_one(query.view());
     if(cursor->empty()){
-        error("%s:Failed to find uuid:%s\n",util::get_timestamp().c_str(),uuid.c_str());
+//        error("%s:Failed to find uuid:%s\n",util::get_timestamp().c_str(),uuid.c_str());
         return ERROR_INTERNAL;
     }
     auto doc = cursor->view();
@@ -109,7 +109,7 @@ int util::read_pem(mongocxx::pool *p,const std::string & database,const std::str
         sm2_private_key_info_decrypt_from_pem(sm2_key,std::to_string(pass).c_str(),fp);
         fclose(fp);
     }else{
-        error("%s:Failed to find private_key\n",util::get_timestamp().c_str());
+//        error("%s:Failed to find private_key\n",util::get_timestamp().c_str());
         return ERROR_INTERNAL;
     }
 
@@ -119,7 +119,7 @@ int util::read_pem(mongocxx::pool *p,const std::string & database,const std::str
             sscanf(sm3_hmac_key.c_str() + i * 2, "%02x", &sm3_hmac_key_arr[i]);
         }
     }else{
-        error("%s:Failed to find sm3_hmac_key\n",util::get_timestamp().c_str());
+//        error("%s:Failed to find sm3_hmac_key\n",util::get_timestamp().c_str());
         return ERROR_INTERNAL;
     }
 
@@ -129,12 +129,12 @@ int util::read_pem(mongocxx::pool *p,const std::string & database,const std::str
 bool util::insert_public_message(mongocxx::pool *p,const std::string & database,const std::string & uuid,const std::string & message){
     auto client = p->try_acquire();
     if (!client) {
-        error("%s:Failed to pop client pool\n",util::get_timestamp().c_str());
+//        error("%s:Failed to pop client pool\n",util::get_timestamp().c_str());
         return false;
     }
     auto public_message = (*client)->database(database).collection("public_message");
     if (!public_message){
-        error("%s:Failed to get collection\n",util::get_timestamp().c_str());
+//        error("%s:Failed to get collection\n",util::get_timestamp().c_str());
         return false;
     }
     auto doc = bsoncxx::builder::stream::document{};
@@ -144,7 +144,7 @@ bool util::insert_public_message(mongocxx::pool *p,const std::string & database,
     try {
         public_message.insert_one(doc.view());
     } catch (mongocxx::exception &e) {
-        error("%s:Failed to insert public message:%s\n",util::get_timestamp().c_str(),e.what());
+//        error("%s:Failed to insert public message:%s\n",util::get_timestamp().c_str(),e.what());
         return false;
     }
     return true;
@@ -153,12 +153,12 @@ bool util::insert_public_message(mongocxx::pool *p,const std::string & database,
 bool util::insert_p2p_message(mongocxx::pool *p,const std::string& database,const std::string& sender,const std::string& receiver,const std::string& message){
     auto client = p->try_acquire();
     if (!client) {
-        error("%s:Failed to pop client pool\n",util::get_timestamp().c_str());
+//        error("%s:Failed to pop client pool\n",util::get_timestamp().c_str());
         return false;
     }
     auto p2p_message = (*client)->database(database).collection("p2p_message");
     if (!p2p_message){
-        error("%s:Failed to get collection\n",util::get_timestamp().c_str());
+//        error("%s:Failed to get collection\n",util::get_timestamp().c_str());
         return false;
     }
     auto doc = bsoncxx::builder::stream::document{};
@@ -169,7 +169,7 @@ bool util::insert_p2p_message(mongocxx::pool *p,const std::string& database,cons
     try {
         p2p_message.insert_one(doc.view());
     } catch (mongocxx::exception &e) {
-        error("%s:Failed to insert p2p message:%s\n",util::get_timestamp().c_str(),e.what());
+//        error("%s:Failed to insert p2p message:%s\n",util::get_timestamp().c_str(),e.what());
         return false;
     }
     return true;
@@ -182,7 +182,7 @@ ERROR util::decrypt_sm4_key_and_iv(uint8_t * payload,
                              size_t *offset
 ){
     if (payload == nullptr) {
-        error("%s:payload is null",util::get_timestamp().c_str());
+//        error("%s:payload is null",util::get_timestamp().c_str());
         //mosquitto_log_printf(MOSQ_LOG_ERR,"%s:payload is null",util::get_timestamp().c_str());
         return ERROR_DATA;
     }
@@ -198,10 +198,10 @@ ERROR util::decrypt_sm4_key_and_iv(uint8_t * payload,
         break;
     }
     if(!success) {
-        error("%s:failed to decrypt sm4 key and iv",util::get_timestamp().c_str())
+//        error("%s:failed to decrypt sm4 key and iv",util::get_timestamp().c_str())
         return ERROR_DECRYPT;
     }
-    info("%s:success decrypt sm4 key and iv",util::get_timestamp().c_str())
+//    info("%s:success decrypt sm4 key and iv",util::get_timestamp().c_str())
     //mosquitto_log_printf(MOSQ_LOG_INFO,"%s:success decrypt sm4 key and iv",util::get_timestamp().c_str());
     memcpy(sm4_key_arr,buf,SM4_KEY_SIZE);
     memcpy(sm4_iv_arr,buf+SM4_KEY_SIZE,SM4_BLOCK_SIZE);

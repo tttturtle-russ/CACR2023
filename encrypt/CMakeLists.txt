@@ -12,5 +12,6 @@ add_executable(${PLUGIN_NAME}
         graph.hpp
         util.hpp
         test.cpp
+        log/log.cpp
 )
 target_link_libraries(${PLUGIN_NAME} gmssl gtest_main)
