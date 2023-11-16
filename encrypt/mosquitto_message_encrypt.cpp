@@ -18,7 +18,6 @@
 
 std::string database;
 static mosquitto_plugin_id_t *mosq_pid = nullptr;
-FILE* log_;
 mongocxx::pool *p = nullptr;
 std::map<std::string,Graph::Graph> m;
 
@@ -81,15 +80,8 @@ int public_handler(struct mosquitto_evt_message *ed){
     uint8_t sm3_hmac_key_arr[SM3_HMAC_KEY_SIZE];
     uint8_t sm4_key_arr[SM4_KEY_SIZE];
     uint8_t sm4_iv_arr[SM4_BLOCK_SIZE];
-
-//    mosquitto_log_printf(MOSQ_LOG_INFO,"%s:receive payload:%s",util::get_timestamp().c_str(),ed->payload);
-//    auto payload = (uint8_t *) mosquitto_malloc(ed->payloadlen/2);
     auto payload = (uint8_t *)ed->payload;
     auto payload_len = ed->payloadlen;
-//    auto payload_len = ed->payloadlen / 2;
-//    for (int i = 0; i < payload_len; ++i) {
-//        sscanf((const char*)ed->payload + i * 2, "%02x", &payload[i]);
-//    }
     // 从payload中解析出uuid
     std::string uuid = util::get_uuid(static_cast<const char*>(ed->payload));
     // 从数据库中读取pem私钥
@@ -276,20 +268,13 @@ static int accident_handler(mosquitto_evt_message *ed) {
     std::string uuid;
     auto payload = (uint8_t *)ed->payload;
     auto payload_len = ed->payloadlen;
-//    for (int i = 0; i < payload_len; ++i) {
-//        sscanf((const char*)ed->payload + i * 2, "%02x", &payload[i]);
-//    }
-    // 从payload中解析出uuid
-//    for (int i = 0; i < UUID_LEN; ++i) {
-//        sscanf(static_cast<const char *>(ed->payload) + i * 2, "%02x", &id[i]);
-//        uuid += id[i];
-//    }
     uuid = util::get_uuid(static_cast<const char*>(ed->payload));
     if (m.find(uuid) == m.end()){
         m[uuid] = Graph::Graph(uuid,p);
     }
     auto str = decrypt_message(payload,payload_len,uuid);
     if (str.empty()){
+        logger::error("failed to decrypt\n");
         return ERROR_DECRYPT;
     }
     if (m.find(str) == m.end()){
@@ -297,7 +282,10 @@ static int accident_handler(mosquitto_evt_message *ed) {
         return ERROR_INTERNAL;
     }
     auto& g2 = m[str];
-    g2.visualization("./accidents/accident_" + g2.get_owner() + "_" + util::get_timestamp().substr(1,8));
+    if (g2.visualization("./accidents/accident_" + g2.get_owner() + "_" + util::get_timestamp().substr(1,8)) != 0) {
+        logger::error("failed to export picture\n");
+        return ERROR_INTERNAL;
+    }
     logger::warn("%s accident at %s",uuid.c_str(),str.c_str());
     return ERROR_SUCCESS;
 }
@@ -333,7 +321,8 @@ int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, s
     }else {
         int originalStderr = dup(fileno(stderr));
         // 关闭 stderr
-        freopen("/dev/null", "w", stderr);
+    //    freopen("/dev/null", "w", stderr);
+        logger::warn("Disable stderr to avoid insignificant info.To enable stderr,set 'stderr true' in config\n");
     }
     mosq_pid = identifier;
     std::string uri_str("mongodb://");
@@ -364,32 +353,31 @@ int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, s
         }
     }
     if (!read_addr){
-        logger::error("db_addr not found.Please specify db address in mosquitto.conf\n");
-        return MOSQ_ERR_INVAL;
+        logger::warn("db_addr not found.use 127.0.0.1 as default\n");
+        addr = "127.0.0.1";
     }
     if (!read_port){
-        logger::error("db_port not found.use 27017 as default\n");
+        logger::warn("db_port not found.use 27017 as default\n");
         port = "27017";
     }
     if (!read_dbname) {
-        logger::error("db_name not found.Please specify db name in mosquitto.conf\n");
-        return MOSQ_ERR_INVAL;
+        logger::warn("db_name not found.use 'mqGate' as default\n");
+        database = "mqGate";
     }
     uri_str += addr + ":" + port + "/";
     if (!read_connopts){
-        logger::error("db_connopts not found.use default connopts\n");
+        logger::warn("db_connopts not found.use default connopts\n");
         connopts = "";
     }else {
         uri_str += "?" + connopts;
     }
     mongocxx::instance instance{};
     p = new mongocxx::pool(mongocxx::uri(uri_str));
+    logger::info("mosquitto_message_encrypt plugin initialized successfully!\n");
     return mosquitto_callback_register(mosq_pid, MOSQ_EVT_MESSAGE, decrypt_message_callback, nullptr, nullptr);
 }
 
 int mosquitto_plugin_cleanup(void *user_data, struct mosquitto_opt *opts, int opt_count){
     delete p;
-    fclose(log_);
-//    mosquitto_callback_unregister(mosq_pid, MOSQ_EVT_MESSAGE, encrypt_message_callback, NULL);
     return mosquitto_callback_unregister(mosq_pid, MOSQ_EVT_MESSAGE, decrypt_message_callback, NULL);
 }

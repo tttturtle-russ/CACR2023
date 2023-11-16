@@ -4,6 +4,8 @@
 
 #ifndef MOSQUITTO_MESSAGE_ENCRYPT_GRAPH_HPP
 #define MOSQUITTO_MESSAGE_ENCRYPT_GRAPH_HPP
+#include "log.hpp"
+
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/iteration_macros.hpp>
 #include <boost/graph/graphviz.hpp>
@@ -36,7 +38,7 @@ namespace Graph{
         graph get_graph();
         std::string get_owner();
         std::string get_vertex_name(const graph::vertex_descriptor &v);
-        void visualization(const std::string &filename);
+        int visualization(const std::string &filename);
         void store(mongocxx::pool *pool);
         void load(mongocxx::pool *pool);
         void update(mongocxx::pool *pool);
@@ -151,15 +153,20 @@ namespace Graph{
         return this->g[v].name;
     }
 
-    void Graph::visualization(const std::string &filename) {
+    int Graph::visualization(const std::string &filename) {
         if (filename.empty()){
             logger::error("No such file or directory\n");
-            return;
+            return 1;
         }
         std::ofstream file(filename);
+        if (!file.is_open() || !file.good()) {
+            logger::error("Failed to create graphiviz file\n");
+            return 1;
+        }
         boost::write_graphviz(file,this->g,boost::make_label_writer(boost::get(&vertex_info::name,this->g)));
         system(("dot -Tpng " + filename + " -o " + filename + ".png").c_str());
         file.close();
+        return 0;
     }
 
     void Graph::store(mongocxx::pool *pool) {
