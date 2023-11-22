@@ -18,7 +18,7 @@ lib.insert_to_database.argtypes = [ctypes.POINTER(ClientInfo)]
 
 client_info = ClientInfo()
 
-def generate_random_string(length = 16):
+def generate_random_string(length = 13):
     characters = string.ascii_letters + string.digits
     random_string = ''.join(random.choice(characters) for _ in range(length))
     return random_string
@@ -28,6 +28,7 @@ def encrypt(pw):
 
 def struct_generate():
     file_name = "username"
+    district = ['001','002','003']
     try:
         if os.path.isfile(file_name):
             with open(file_name, 'r') as file:
@@ -35,11 +36,11 @@ def struct_generate():
                 if content:
                     username = content 
                 else:
-                    username = generate_random_string()
+                    username = district[0]+generate_random_string()
                     with open(file_name, 'w') as file:
                         file.write(username)
         else:
-            username = generate_random_string()
+            username = district[0]+generate_random_string()
             with open(file_name, 'w') as file:
                 file.write(username)
     except IOError as e:

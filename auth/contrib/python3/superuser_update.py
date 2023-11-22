@@ -12,7 +12,8 @@ lib2 = ctypes.CDLL("./compare.so")
 # 创建一个ClientInfo结构体实例
 class ClientInfo(ctypes.Structure):
     _fields_ = [("username", ctypes.c_char * 256),
-                ("password", ctypes.c_char * 256)]
+                ("password", ctypes.c_char * 256),
+                ("superuser",ctypes.c_bool)]
 
 # 定义C函数的参数和返回类型
 lib.search_database.argtypes = [ctypes.c_char_p]
@@ -54,12 +55,32 @@ def struct_generate():
         if lib2.pbkdf2_check(pw.encode(),passwd) == 0:
             sys.exit("Passwords don't match!")
         else:
-            flag = getpass("is it a superuser? Enter true or false")
-            flag = flag.lower()
-            if flag == "true":
-                lib.update_superuser(struct1,1)
-            elif flag == "false":   
-                    lib.update_superuser(struct1,0)
+            # print(temp.username)
+            # print(temp.superuser)
+            if temp.superuser == True:
+                new_username = getpass("Please enter the username for which you want to modify superuser permissions: ")
+                # if new_username == username:
+                #     permission = getpass("tring to change your own user's ")
+                struct2 = lib.search_database(new_username.encode())
+                print(struct2.contents.username)
+                if struct2 is not None:
+                    # lib.update_superuser(struct1,1)
+                    flag = getpass("superuser or not? Enter true or false")
+                    flag = flag.lower()
+                    if flag == "true":
+                        lib.update_superuser(struct2,1)
+                    elif flag == "false" and username == new_username:
+                        flag2 = getpass("you will never be superuser!are you sure to be?yes or no")
+                        if flag2 == 'yes':   
+                            lib.update_superuser(struct1,0)
+                        else:
+                            print("operator is interrupted")
+                    else:
+                        print("cannot do this to other user")
+                else:
+                    print("the user you entered is not existed!")
+            elif temp.superuser == False:
+                print("only superuser can!")
 
 struct_generate()
 
