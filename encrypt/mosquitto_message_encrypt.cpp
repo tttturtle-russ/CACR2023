@@ -292,6 +292,7 @@ static int accident_handler(mosquitto_evt_message *ed) {
 
 static int decrypt_message_callback(int event, void *event_data, void *userdata){
     auto *ed = static_cast<mosquitto_evt_message *>(event_data);
+    logger::info(ed->topic);
     if (!strcmp(ed->topic,"/public")){
         return public_handler(ed);
     }else if (!strncmp(ed->topic,"/p2p/",5)){
@@ -321,7 +322,7 @@ int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, s
     }else {
         int originalStderr = dup(fileno(stderr));
         // 关闭 stderr
-    //    freopen("/dev/null", "w", stderr);
+        //freopen("/dev/null", "w", stderr);
         logger::warn("Disable stderr to avoid insignificant info.To enable stderr,set 'stderr true' in config\n");
     }
     mosq_pid = identifier;
@@ -371,6 +372,7 @@ int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, s
     }else {
         uri_str += "?" + connopts;
     }
+    logger::info(uri_str.c_str());
     mongocxx::instance instance{};
     p = new mongocxx::pool(mongocxx::uri(uri_str));
     logger::info("mosquitto_message_encrypt plugin initialized successfully!\n");
