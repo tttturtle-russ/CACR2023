@@ -79,7 +79,7 @@ namespace Graph{
             fprintf(stderr, "Failed to pop client from pool.\n");
             return;
         }
-        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        auto graph_collection = (*client)->database("mqGate").collection("graph");
         if (!graph_collection) {
             fprintf(stderr, "Failed to get collection.\n");
             return;
@@ -105,7 +105,7 @@ namespace Graph{
             fprintf(stderr, "Failed to pop client from pool.\n");
             return;
         }
-        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        auto graph_collection = (*client)->database("mqGate").collection("graph");
         if (!graph_collection) {
             fprintf(stderr, "Failed to get collection.\n");
             return;
@@ -158,6 +158,8 @@ namespace Graph{
             logger::error("No such file or directory\n");
             return 1;
         }
+        logger::info("start to visualization graph.\n");
+        logger::info("path:%s\n",filename.c_str());
         std::ofstream file(filename);
         if (!file.is_open() || !file.good()) {
             logger::error("Failed to create graphiviz file\n");
@@ -166,6 +168,7 @@ namespace Graph{
         boost::write_graphviz(file,this->g,boost::make_label_writer(boost::get(&vertex_info::name,this->g)));
         system(("dot -Tpng " + filename + " -o " + filename + ".png").c_str());
         file.close();
+        system("rm -rf *.dot");
         return 0;
     }
 
@@ -176,7 +179,7 @@ namespace Graph{
             logger::error("Failed to pop client from pool.\n");
             return;
         }
-        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        auto graph_collection = (*client)->database("mqGate").collection("graph");
         if (!graph_collection) {
             logger::error("Failed to get collection.\n");
 //            fprintf(stderr, "Failed to get collection.\n");
@@ -196,7 +199,7 @@ namespace Graph{
 //            fprintf(stderr, "Failed to pop client from pool.\n");
             return;
         }
-        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        auto graph_collection = (*client)->database("mqGate").collection("graph");
         if (!graph_collection) {
             logger::error("Failed to get collection.\n");
 //            fprintf(stderr, "Failed to get collection.\n");
@@ -250,7 +253,7 @@ namespace Graph{
 //            fprintf(stderr, "Failed to pop client from pool.\n");
             return;
         }
-        auto graph_collection = (*client)->database("mqtt").collection("graph");
+        auto graph_collection = (*client)->database("mqGate").collection("graph");
         if (!graph_collection) {
             logger::error("Failed to get collection.\n");
 //            fprintf(stderr, "Failed to get collection.\n");

@@ -1,0 +1,35 @@
+2023-11-23 05:15:19 - Neovide panicked with the message 'called `Result::unwrap()` on an `Err` value: Error { raw_code: Some(12301), raw_os_message: None, kind: BadSurface }'. (File: src/window/window_wrapper.rs; Line: 322, Column: 54)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_main
+  17: <unknown>
+
+2023-11-23 05:15:19 - Neovide panicked with the message 'called `Result::unwrap()` on an `Err` value: SendError { .. }'. (File: src/event_aggregator.rs; Line: 51, Column: 28)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+

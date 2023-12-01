@@ -277,22 +277,23 @@ static int accident_handler(mosquitto_evt_message *ed) {
         logger::error("failed to decrypt\n");
         return ERROR_DECRYPT;
     }
-    if (m.find(str) == m.end()){
-        logger::error("accident %s not found\n",str.c_str());
-        return ERROR_INTERNAL;
-    }
-    auto& g2 = m[str];
-    if (g2.visualization("./accidents/accident_" + g2.get_owner() + "_" + util::get_timestamp().substr(1,8)) != 0) {
+//    if (m.find(str) == m.end()){
+//        logger::error("accident %s not found\n",str.c_str());
+//        return ERROR_INTERNAL;
+//    }
+    auto& g2 = m[uuid];
+    if (g2.visualization("/home/russ/CACR/encrypt/accidents/accident_" + g2.get_owner() + ".dot") != 0) {
         logger::error("failed to export picture\n");
         return ERROR_INTERNAL;
     }
+    logger::info("picture exported at /home/russ/CACR/encrypt/accidents/accident_%s.png\n",g2.get_owner().c_str());
     logger::warn("%s accident at %s",uuid.c_str(),str.c_str());
     return ERROR_SUCCESS;
 }
 
 static int decrypt_message_callback(int event, void *event_data, void *userdata){
     auto *ed = static_cast<mosquitto_evt_message *>(event_data);
-    logger::info(ed->topic);
+    logger::info("topic:%s\n",ed->topic);
     if (!strcmp(ed->topic,"/public")){
         return public_handler(ed);
     }else if (!strncmp(ed->topic,"/p2p/",5)){
@@ -322,7 +323,7 @@ int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, s
     }else {
         int originalStderr = dup(fileno(stderr));
         // 关闭 stderr
-        //freopen("/dev/null", "w", stderr);
+        freopen("/dev/null", "w", stderr);
         logger::warn("Disable stderr to avoid insignificant info.To enable stderr,set 'stderr true' in config\n");
     }
     mosq_pid = identifier;
@@ -372,7 +373,6 @@ int mosquitto_plugin_init(mosquitto_plugin_id_t *identifier, void **user_data, s
     }else {
         uri_str += "?" + connopts;
     }
-    logger::info(uri_str.c_str());
     mongocxx::instance instance{};
     p = new mongocxx::pool(mongocxx::uri(uri_str));
     logger::info("mosquitto_message_encrypt plugin initialized successfully!\n");
